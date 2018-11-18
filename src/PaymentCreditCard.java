@@ -5,22 +5,16 @@ public class PaymentCreditCard extends Payment{
 
     // Variables
     String creditCardNumber;
-    Date expirationDate;
 
     // Constructors
-    public PaymentCreditCard(BigDecimal amount, String creditCardNumber, Date expirationDate) {
+    public PaymentCreditCard(BigDecimal amount, String creditCardNumber) {
         super(amount);
         this.creditCardNumber = creditCardNumber;
-        this.expirationDate = expirationDate;
     }
 
     // Getters and Setters
     public String getCreditCardNumber() {
         return creditCardNumber;
-    }
-
-    public Date getExpirationDate() {
-        return expirationDate;
     }
 
     // Methods

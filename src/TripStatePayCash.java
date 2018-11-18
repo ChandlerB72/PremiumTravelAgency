@@ -20,7 +20,7 @@ public class TripStatePayCash extends TripState{
         Scanner scanner = new Scanner(System.in);
 
         // Navigates to new state and/or pays amount based off user input
-        while (true){
+        while (true) {
             String userInput = new String();
 
             if (scanner.hasNext())
@@ -34,11 +34,12 @@ public class TripStatePayCash extends TripState{
 
             if (isNumeric(userInput)) {
                 getTripContext().getTrip().setPayment(new PaymentCash(new BigDecimal(userInput)));
-                System.out.println("--Accepted " + userInput + " in cash --");
+                System.out.println("--Accepted " + userInput + " via cash --");
                 getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
                 return TripStateLoop.Status.Continue;
             }
 
-            System.out.println("-- Error: Selection invalid. Please try again!--");
+            System.out.println("-- Error: Selection invalid. Please try again! --");
         }
+    }
 }

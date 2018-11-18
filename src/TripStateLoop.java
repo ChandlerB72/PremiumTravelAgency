@@ -9,7 +9,7 @@ public class TripStateLoop {
 
         TripContext tripContext = trip == null ? new TripContext() : new TripContext(trip);
 
-        while(tripContext.execute() == Status.Continue){}
+        while (tripContext.execute() == Status.Continue){}
 
         System.out.println(System.lineSeparator());
         System.out.println("-- Trip Loop has Stopped--");

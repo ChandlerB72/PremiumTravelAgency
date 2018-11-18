@@ -6,7 +6,7 @@ public class TripContext {
 
     // Constructors
     public TripContext() {
-        this.tripState = new TripStateCreate();
+        this.tripState = new TripStateCreate(this);
     }
 
     public TripContext(Trip trip){

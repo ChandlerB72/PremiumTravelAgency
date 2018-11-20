@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class TripStateAddDestinations extends TripState{
 
     // Constructor
@@ -48,5 +50,39 @@ public class TripStateAddDestinations extends TripState{
         }
 
         System.out.println();
+    }
+
+    @Override
+    public TripStateLoop.Status execute(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println(System.lineSeparator());
+        System.out.println("-- Add Destinations --");
+        System.out.println();
+        System.out.println("-- Please select one of the following: ");
+        System.out.println("\t : Enter your destinations");
+        System.out.println("\t : Enter [done] to finish adding destinations");
+        System.out.println("\t : Enter [later] to save and return to add destinations later");
+
+        boolean getDestinations = false;
+        while (!getDestinations) {
+            String userInput = scanner.nextLine().trim();
+
+            if (returnLater(userInput))
+                return TripStateLoop.Status.Stop;
+
+            if (continueEnteringDestinations(userInput)) {
+                if (isDestinationValid(userInput)) {
+                    getTripContext().getTrip().getDestinations().add(userInput);
+                    System.out.println("-- " + userInput + " Added --");
+                }
+            }
+            else {
+                getDestinations = isDestinationListValid();
+            }
+        }
+
+        getTripContext().changeState(new TripStateChoosePaymentType(getTripContext()));
+        return TripStateLoop.Status.Continue;
     }
 }

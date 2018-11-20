@@ -28,7 +28,7 @@ public abstract class TripState {
 
         if (returnLater) {
             System.out.println();
-            System.out.println("--Trip Saved to Be Completed Later--");
+            System.out.println("-- Trip Saved to Be Completed Later --");
         }
 
         return returnLater;

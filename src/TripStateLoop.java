@@ -12,7 +12,7 @@ public class TripStateLoop {
         while (tripContext.execute() == Status.Continue){}
 
         System.out.println(System.lineSeparator());
-        System.out.println("-- Trip Loop has Stopped--");
+        System.out.println("-- Trip Loop has Stopped --");
         System.out.println(System.lineSeparator());
 
         return tripContext.getTrip();

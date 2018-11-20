@@ -26,7 +26,7 @@ public class TripStateAddDestinations extends TripState{
         if (isDuplicate)
             System.out.println("-- Error: You can't enter the same destination twice. --");
 
-        return isDuplicate;
+        return !isDuplicate;
     }
 
     private boolean continueEnteringDestinations(String newDestination){

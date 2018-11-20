@@ -37,7 +37,7 @@ public class TripStatePayCheck extends TripState{
 
                     int checkNumber = scanner.nextInt();
                     getTripContext().getTrip().setPayment(new PaymentCheck(new BigDecimal(userInput), checkNumber));
-                    System.out.println("--Accepted " + userInput + " via check --");
+                    System.out.println("-- Accepted " + userInput + " via check --");
                     getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
                     return TripStateLoop.Status.Continue;
 

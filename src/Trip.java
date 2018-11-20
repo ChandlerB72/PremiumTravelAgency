@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -13,7 +14,8 @@ public class Trip {
 
     // Constructors
     public Trip() {
-        //TODO: NEED TO ADD ELEMENTS
+        tripStateStatus = TripState.Status.Create;
+        destinations = new ArrayList<String>();
     }
 
     // Getters and Setters

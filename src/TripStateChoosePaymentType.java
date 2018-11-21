@@ -12,10 +12,8 @@ public class TripStateChoosePaymentType extends TripState{
 
     @Override
     public TripStateLoop.Status execute() {
-        System.out.println(System.lineSeparator());
-        System.out.println("--Choose Payment Type--");
-        System.out.println();
-        System.out.println("--Please select one of the following: ");
+        System.out.println("-- Payment Menu --");
+        System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter [cash] to pay by cash");
         System.out.println("\t : Enter [check] to pay by check");
         System.out.println("\t : Enter [credit] to pay by credit card");
@@ -51,7 +49,7 @@ public class TripStateChoosePaymentType extends TripState{
                 return TripStateLoop.Status.Continue;
             }
 
-            System.out.println("-- Error: Selection invalid. Please try again!--");
+            System.out.println("ERROR: Selection invalid. Please try again!");
 
         }
 

@@ -7,9 +7,7 @@ public class TripStateComplete extends TripState{
 
     @Override
     public TripStateLoop.Status execute() {
-        System.out.println(System.lineSeparator());
-        System.out.println("-- Trip Booked. Itinerary Now Available --");
-        System.out.println();
+        System.out.println("-- Trip Completed | Itinerary Now Available --");
 
         return TripStateLoop.Status.Stop;
     }

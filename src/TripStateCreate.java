@@ -19,7 +19,7 @@ public class TripStateCreate extends TripState {
     @Override
     public TripStateLoop.Status execute() {
         System.out.println();
-        System.out.println("-- New Trip Created --");
+        System.out.println("----- New Trip Created -----");
         getTripContext().changeState(new TripStateAddDestinations(getTripContext()));
 
         return TripStateLoop.Status.Continue;

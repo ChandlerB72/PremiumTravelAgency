@@ -12,9 +12,6 @@ public class ItineraryAppendSeparator extends ItineraryDecorator{
 
         toOutput.append("--------------------------------------------");
 
-        toOutput.append(System.lineSeparator());
-        toOutput.append(System.lineSeparator());
-
         return toOutput.toString();
     }
 }

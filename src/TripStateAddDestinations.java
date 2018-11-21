@@ -33,9 +33,8 @@ public class TripStateAddDestinations extends TripState{
         boolean done = newDestination.toLowerCase().equals("done");
 
         if (done && !getTripContext().getTrip().getDestinations().isEmpty()){
-            System.out.println();
-            System.out.println("-- Destinations Complete. " +
-                    getTripContext().getTrip().getDestinations().size() + " entered.==");
+            System.out.println("-- Destinations Completed | " +
+                    getTripContext().getTrip().getDestinations().size() + " entered --");
         }
 
         return !done;
@@ -43,23 +42,20 @@ public class TripStateAddDestinations extends TripState{
 
     private void showCurrentDestinations(){
         if (!getTripContext().getTrip().getDestinations().isEmpty())
-            System.out.println("-- Currently " + getTripContext().getTrip().getDestinations().size() + " in trip.");
+            System.out.println("Currently " + getTripContext().getTrip().getDestinations().size() + " in trip.");
 
         for (int dest = 0; dest < getTripContext().getTrip().getDestinations().size(); dest++) {
             System.out.println((dest + 1) + ". " + getTripContext().getTrip().getDestinations().get(dest));
         }
-
-        System.out.println();
     }
 
     @Override
     public TripStateLoop.Status execute(){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println(System.lineSeparator());
-        System.out.println("-- Add Destinations --");
-        System.out.println();
-        System.out.println("-- Please select one of the following: ");
+        System.out.println("-- Add Destinations Menu --");
+        showCurrentDestinations();
+        System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter your destinations");
         System.out.println("\t : Enter [done] to finish adding destinations");
         System.out.println("\t : Enter [later] to save and return to add destinations later");
@@ -74,7 +70,7 @@ public class TripStateAddDestinations extends TripState{
             if (continueEnteringDestinations(userInput)) {
                 if (isDestinationValid(userInput)) {
                     getTripContext().getTrip().getDestinations().add(userInput);
-                    System.out.println("-- " + userInput + " Added --");
+                    System.out.println(userInput + " Added!");
                 }
             }
             else {

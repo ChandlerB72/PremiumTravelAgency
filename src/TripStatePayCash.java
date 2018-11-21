@@ -8,12 +8,12 @@ public class TripStatePayCash extends TripState{
         super(tripContext, Status.PayCash);
     }
 
+    // Methods
     @Override
     public TripStateLoop.Status execute() {
         System.out.println(System.lineSeparator());
-        System.out.println("-- Cash Payment Selected --");
-        System.out.println();
-        System.out.println("--Please select one of the following: ");
+        System.out.println("-- Cash Payment Menu --");
+        System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter an amount to pay");
         System.out.println("\t : Enter [later] to save and return to payment details later");
 
@@ -39,7 +39,7 @@ public class TripStatePayCash extends TripState{
                 return TripStateLoop.Status.Continue;
             }
 
-            System.out.println("-- Error: Selection invalid. Please try again! --");
+            System.out.println("ERROR: Selection invalid. Please try again! --");
         }
     }
 }

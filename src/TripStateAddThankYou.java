@@ -23,9 +23,9 @@ public class TripStateAddThankYou extends TripState{
     @Override
     public TripStateLoop.Status execute() {
         System.out.println(System.lineSeparator());
-        System.out.println("-- Add Thank You Selected --");
+        System.out.println("-- Thank You Creation Menu --");
         System.out.println();
-        System.out.println("-- Please select one of the following: ");
+        System.out.println("Please select one of the following: ");
         System.out.println("\t : Thank you message (5 characters or more)");
         System.out.println("\t : Enter [later] to save and return to Thank You later");
 

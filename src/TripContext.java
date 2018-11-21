@@ -10,7 +10,7 @@ public class TripContext {
     }
 
     public TripContext(Trip trip){
-        assert trip != null : "--Error: Trip can't be null!--";
+        assert trip != null : "ERROR: Trip can't be null!";
     }
 
     // Getters and Setters

@@ -20,6 +20,6 @@ public class PaymentCreditCard extends Payment{
     // Methods
     @Override
     public String Describe() {
-        return super.Describe() + "via Credit Card (****" + creditCardNumber.substring(12) + ")";
+        return super.Describe() + " via Credit Card (****" + creditCardNumber.substring(12) + ")";
     }
 }

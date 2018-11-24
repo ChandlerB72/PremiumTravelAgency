@@ -9,8 +9,11 @@ public class TripContext {
         this.tripState = new TripStateCreate(this);
     }
 
-    public TripContext(Trip trip){
+    public TripContext(Trip trip) throws Exception{
         assert trip != null : "ERROR: Trip can't be null!";
+
+        this.trip = trip;
+        tripState = TripContextStateFactory.get(this);
     }
 
     // Getters and Setters

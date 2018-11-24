@@ -65,9 +65,11 @@ public class Main {
             System.out.println(itinerary);
             return;
         }
-
-        System.out.println("Trip " + trip.getOrderId() + " is not complete - cannot produce itinerary yet");
-        System.out.println("Trip " + trip.getOrderId() + " state = " + trip.getTripStateStatus());
+        System.out.println();
+        System.out.println("---------------------------------------------------------");
+        System.out.println("Trip #" + trip.getOrderId() + " Incomplete - Itinerary Unavailable");
+        System.out.println("Current state : " + trip.getTripStateStatus());
+        System.out.println("---------------------------------------------------------");
     }
 
 }

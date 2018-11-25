@@ -2,40 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f37cd7-2b91-43f1-b26a-3fd6925f1c7e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/LoadPerson.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/LoadTravelAgents.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Person.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/TravelAgent.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Traveler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/TripStateAddPackages.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/TripStateAddTravelers.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/ItineraryAppendTravelers.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/LoadPackages.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Package.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Iteration3.iml" afterPath="$PROJECT_DIR$/Iteration3.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/ItineraryAppendBookingDetails.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/ItineraryAppendBookingDetails.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/ItineraryAppendDestinations.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/ItineraryAppendDestinations.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/ItineraryAppendSeparator.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/ItineraryAppendSeparator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/ItineraryAppendThanks.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/ItineraryAppendThanks.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/Main.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/ItineraryFactory.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/ItineraryFactory.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/LoadPerson.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/LoadPerson.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/LoadTravelAgents.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/LoadTravelAgents.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/Person.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/Person.class" />
       <change beforePath="$PROJECT_DIR$/out/production/Iteration3/Trip.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/Trip.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/TripState$Status.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/TripState$Status.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/TripStateAddDestinations.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/TripStateAddDestinations.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/TripStateCreate.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/TripStateCreate.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/TripStatePayCash.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/TripStatePayCash.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/TripStatePayCheck.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/TripStatePayCheck.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/TripStatePayCreditCard.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/TripStatePayCreditCard.class" />
-      <change beforePath="$PROJECT_DIR$/src/ItineraryAppendBookingDetails.java" afterPath="$PROJECT_DIR$/src/ItineraryAppendBookingDetails.java" />
-      <change beforePath="$PROJECT_DIR$/src/ItineraryAppendDestinations.java" afterPath="$PROJECT_DIR$/src/ItineraryAppendDestinations.java" />
-      <change beforePath="$PROJECT_DIR$/src/ItineraryAppendSeparator.java" afterPath="$PROJECT_DIR$/src/ItineraryAppendSeparator.java" />
-      <change beforePath="$PROJECT_DIR$/src/ItineraryAppendThanks.java" afterPath="$PROJECT_DIR$/src/ItineraryAppendThanks.java" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/TripStateAddPackages.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/TripStateAddPackages.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Iteration3/TripStateChoosePaymentType.class" afterPath="$PROJECT_DIR$/out/production/Iteration3/TripStateChoosePaymentType.class" />
+      <change beforePath="$PROJECT_DIR$/src/ItineraryFactory.java" afterPath="$PROJECT_DIR$/src/ItineraryFactory.java" />
+      <change beforePath="$PROJECT_DIR$/src/LoadPerson.java" afterPath="$PROJECT_DIR$/src/LoadPerson.java" />
+      <change beforePath="$PROJECT_DIR$/src/LoadTravelAgents.java" afterPath="$PROJECT_DIR$/src/LoadTravelAgents.java" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" afterPath="$PROJECT_DIR$/src/Person.java" />
       <change beforePath="$PROJECT_DIR$/src/Trip.java" afterPath="$PROJECT_DIR$/src/Trip.java" />
-      <change beforePath="$PROJECT_DIR$/src/TripContextStateFactory.java" afterPath="$PROJECT_DIR$/src/TripContextStateFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/TripState.java" afterPath="$PROJECT_DIR$/src/TripState.java" />
-      <change beforePath="$PROJECT_DIR$/src/TripStateAddDestinations.java" afterPath="$PROJECT_DIR$/src/TripStateAddDestinations.java" />
-      <change beforePath="$PROJECT_DIR$/src/TripStateCreate.java" afterPath="$PROJECT_DIR$/src/TripStateCreate.java" />
-      <change beforePath="$PROJECT_DIR$/src/TripStatePayCash.java" afterPath="$PROJECT_DIR$/src/TripStatePayCash.java" />
-      <change beforePath="$PROJECT_DIR$/src/TripStatePayCheck.java" afterPath="$PROJECT_DIR$/src/TripStatePayCheck.java" />
-      <change beforePath="$PROJECT_DIR$/src/TripStatePayCreditCard.java" afterPath="$PROJECT_DIR$/src/TripStatePayCreditCard.java" />
+      <change beforePath="$PROJECT_DIR$/src/TripStateAddPackages.java" afterPath="$PROJECT_DIR$/src/TripStateAddPackages.java" />
+      <change beforePath="$PROJECT_DIR$/src/TripStateAddTravelers.java" afterPath="$PROJECT_DIR$/src/TripStateAddTravelers.java" />
+      <change beforePath="$PROJECT_DIR$/src/TripStateChoosePaymentType.java" afterPath="$PROJECT_DIR$/src/TripStateChoosePaymentType.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,84 +38,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="TripStatePayCash.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TripStatePayCash.java">
+      <file leaf-file-name="TripStateAddPackages.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TripStateAddPackages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TripStatePayCheck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TripStatePayCheck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TripStatePayCreditCard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TripStatePayCreditCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TripStateAddThankYou.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TripStateAddThankYou.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TripStateCreate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TripStateCreate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+            <state relative-caret-position="-34">
+              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#181#182#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TripStateAddDestinations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TripStateAddDestinations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="63" column="34" lean-forward="true" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TripContextStateFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TripContextStateFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -138,8 +55,8 @@
       <file leaf-file-name="TripStateAddTravelers.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TripStateAddTravelers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="229">
+              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#193#194#0" expanded="true" />
@@ -149,17 +66,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TripState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TripState.java">
+      <file leaf-file-name="ItineraryDecorator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ItineraryDecorator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
-              <folding>
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#549#550#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItineraryAppendSeparator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ItineraryAppendSeparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItineraryFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ItineraryFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItineraryAppendDestinations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ItineraryAppendDestinations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iItineraryComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/iItineraryComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Itinerary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Itinerary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItineraryAppendThanks.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ItineraryAppendThanks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,10 +174,8 @@
         <option value="$PROJECT_DIR$/src/Itinerary.java" />
         <option value="$PROJECT_DIR$/src/ItineraryDecorator.java" />
         <option value="$PROJECT_DIR$/src/TripStateAddThankYou.java" />
-        <option value="$PROJECT_DIR$/src/TripStateChoosePaymentType.java" />
         <option value="$PROJECT_DIR$/src/TripStateComplete.java" />
         <option value="$PROJECT_DIR$/src/PaymentCreditCard.java" />
-        <option value="$PROJECT_DIR$/src/ItineraryFactory.java" />
         <option value="$PROJECT_DIR$/src/TripStateLoop.java" />
         <option value="$PROJECT_DIR$/src/TripContext.java" />
         <option value="$PROJECT_DIR$/src/TripStatePayCreditCard.java" />
@@ -219,20 +189,26 @@
         <option value="$PROJECT_DIR$/src/TripStateSelectTravelAgent.java" />
         <option value="$PROJECT_DIR$/src/TravelAgents.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Trip.java" />
-        <option value="$PROJECT_DIR$/src/TripStateAddPackages.java" />
         <option value="$PROJECT_DIR$/src/Travelers.java" />
         <option value="$PROJECT_DIR$/src/Traveler" />
         <option value="$PROJECT_DIR$/src/Traveler.java" />
         <option value="$PROJECT_DIR$/src/TravelAgent.java" />
-        <option value="$PROJECT_DIR$/src/LoadTravelAgents.java" />
-        <option value="$PROJECT_DIR$/src/Person.java" />
-        <option value="$PROJECT_DIR$/src/LoadPerson.java" />
         <option value="$PROJECT_DIR$/src/TripStateAddDestinations.java" />
         <option value="$PROJECT_DIR$/src/TripStatePayCheck.java" />
         <option value="$PROJECT_DIR$/src/TripStatePayCash.java" />
         <option value="$PROJECT_DIR$/src/TripStateCreate.java" />
         <option value="$PROJECT_DIR$/src/TripContextStateFactory.java" />
+        <option value="$PROJECT_DIR$/src/TripStateChoosePaymentType.java" />
+        <option value="$PROJECT_DIR$/src/LoadTravelAgents.java" />
+        <option value="$PROJECT_DIR$/src/LoadPerson.java" />
+        <option value="$PROJECT_DIR$/src/Person.java" />
+        <option value="$PROJECT_DIR$/src/Packages.java" />
+        <option value="$PROJECT_DIR$/src/LoadPackages.java" />
+        <option value="$PROJECT_DIR$/src/Package.java" />
+        <option value="$PROJECT_DIR$/src/TripStateAddPackages.java" />
+        <option value="$PROJECT_DIR$/src/Trip.java" />
+        <option value="$PROJECT_DIR$/src/ItineraryAppendTravelers.java" />
+        <option value="$PROJECT_DIR$/src/ItineraryFactory.java" />
         <option value="$PROJECT_DIR$/src/TripStateAddTravelers.java" />
       </list>
     </option>
@@ -631,77 +607,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="98" lean-forward="false" selection-start-line="69" selection-start-column="98" selection-end-line="69" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TripStateLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TripContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#147#148#0" expanded="false" />
-            <element signature="e#205#206#0" expanded="false" />
-            <element signature="e#462#463#0" expanded="false" />
-            <element signature="e#489#490#0" expanded="false" />
-            <element signature="e#527#528#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-            <element signature="e#598#599#0" expanded="false" />
-            <element signature="e#630#631#0" expanded="false" />
-            <element signature="e#695#696#0" expanded="false" />
-            <element signature="e#731#732#0" expanded="false" />
-            <element signature="e#775#776#0" expanded="false" />
-            <element signature="e#817#818#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Trip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
-            <element signature="e#1522#1523#0" expanded="true" />
-            <element signature="e#1560#1561#0" expanded="true" />
-            <element signature="e#1612#1613#0" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1722#1723#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TripStateChoosePaymentType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1584">
@@ -787,14 +692,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/System.java" />
-    <entry file="file://$PROJECT_DIR$/src/iItineraryComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PaymentCreditCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -816,73 +713,6 @@
         <state relative-caret-position="119">
           <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Payment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#348#349#0" expanded="false" />
-            <element signature="e#396#397#0" expanded="false" />
-            <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Itinerary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="e#294#295#0" expanded="false" />
-            <element signature="e#329#330#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ItineraryDecorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ItineraryFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ItineraryAppendThanks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ItineraryAppendSeparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ItineraryAppendDestinations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="15" selection-end-column="48" />
-          <folding>
-            <element signature="e#169#170#0" expanded="false" />
-            <element signature="e#211#212#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -918,14 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TripStateChoosePaymentType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="51" column="75" lean-forward="false" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TripContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -947,44 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Trip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-            <element signature="e#1256#1257#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
-            <element signature="e#1522#1523#0" expanded="true" />
-            <element signature="e#1560#1561#0" expanded="true" />
-            <element signature="e#1612#1613#0" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1722#1723#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Traveler">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -993,33 +777,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoadPerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoadTravelAgents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TravelAgent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding>
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="false" />
+            <element signature="e#430#431#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1029,42 +793,9 @@
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TripStateAddPackages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1117,12 +848,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TripStateCreate.java">
+    <entry file="file://$PROJECT_DIR$/src/TripState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state relative-caret-position="132">
+          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#410#411#0" expanded="false" />
+            <element signature="e#444#445#0" expanded="false" />
+            <element signature="e#503#504#0" expanded="false" />
+            <element signature="e#549#550#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Payment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TripStateChoosePaymentType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoadTravelAgents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TripContextStateFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="method#Person#0;class#Person#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1135,31 +913,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TripState.java">
+    <entry file="file://$PROJECT_DIR$/src/Packages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoadPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TripContextStateFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/Trip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <element signature="e#973#974#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1801#1802#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoadPackages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TripStateCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Package.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TripStateAddPackages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ItineraryAppendThanks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ItineraryAppendSeparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iItineraryComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Itinerary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ItineraryDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ItineraryAppendTravelers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ItineraryAppendDestinations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ItineraryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TripStateAddTravelers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="229">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#193#194#0" expanded="true" />

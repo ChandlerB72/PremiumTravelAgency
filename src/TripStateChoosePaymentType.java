@@ -12,6 +12,7 @@ public class TripStateChoosePaymentType extends TripState{
 
     @Override
     public TripStateLoop.Status execute() {
+        System.out.println();
         System.out.println("-- Payment Menu --");
         System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter [cash] to pay by cash");

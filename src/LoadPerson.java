@@ -5,15 +5,15 @@ import java.util.List;
 public class LoadPerson {
     // Person Singleton
     private static final Object syncLock = new Object();
-    private static volatile TravelAgent travelAgent;
+    private static volatile LoadPerson loadPerson;
     private static List travelerList = new ArrayList();
 
     private LoadPerson() {}
 
     public static List getInstance(){
-        if (travelAgent == null){
+        if (loadPerson == null){
             synchronized (syncLock){
-                if (travelAgent == null){
+                if (loadPerson == null){
                     travelerList.add(new TravelAgent(1,"Pennie", "Paterno","770-555-0001", "Female", true));
                     travelerList.add(new TravelAgent(2,"Cristobal", "Counce","770-555-0002", "Female", true));
                     travelerList.add(new TravelAgent(3,"Glady", "Gosse","770-555-0003", "Male", true));

@@ -21,7 +21,7 @@ public class TripStateAddTravelers extends TripState {
     }
 
     public boolean isTravelerValid(String userInput, List<Person> travelersList) {
-        int selectedID;
+//        int selectedID;
 
         // Empty
         if (userInput.isEmpty()) {
@@ -29,20 +29,14 @@ public class TripStateAddTravelers extends TripState {
             return false;
         }
 
-        // NaN
-        try {
-            selectedID = Integer.parseInt(userInput);
-        } catch (Exception e) {
-            System.out.println("ERROR: Invalid value. Enter [Done], [Later] or the Person ID");
-            return false;
-        }
-
-        // Check if ID in list
         for (int traveler = 0; traveler < travelersList.size(); traveler++) {
-            if (selectedID == travelersList.get(traveler).personID) //Check if ID in travelersList
+            
+            if ((travelersList.get(traveler).getFirstName() + " " + travelersList.get(traveler).getLastName()).equals(userInput)) {
                 break; // If its valid, it will break out of the if and continue on
-            else if (traveler == travelersList.size() - 1) {
-                System.out.println("ERROR: Invalid ID. Please select a valid ID from possible travelers");
+            }
+
+            if (traveler == travelersList.size()-1){ // Compare length of list to iteration
+                System.out.println("ERROR: Invalid name. Please select a valid name from possible travelers");
                 return false;
             }
         }
@@ -100,7 +94,7 @@ public class TripStateAddTravelers extends TripState {
         System.out.println();
 
         System.out.println("Please select one of the following: ");
-        System.out.println("\t : Enter traveler ID");
+        System.out.println("\t : Enter traveler full name"); // changed ID to full name
         System.out.println("\t : Enter [done] to finish adding Travelers");
         System.out.println("\t : Enter [later] to save and return to add travelers later");
 
@@ -117,15 +111,14 @@ public class TripStateAddTravelers extends TripState {
             if (continueEnteringTravelers(userInput)){
                 if (isTravelerValid(userInput, travelerList)) {
                     getTripContext().getTrip().getTravelers().add(userInput);
-                    System.out.println(travelerList.get(Integer.parseInt(userInput)).getFirstName() + " "
-                            + travelerList.get(Integer.parseInt(userInput)).getLastName() + " Added!");
+                    System.out.println(userInput + " Added!");
                 }
             }else {
                 getTravelers = isTravelersListValid();
             }
         }
 
-        getTripContext().changeState(new TripStateAddDestinations(getTripContext()));
+        getTripContext().changeState(new TripStateAddDestinations(getTripContext())); //TODO: CHANGE TO TRIPSTATEADDPACKAGES
         return TripStateLoop.Status.Continue;
     }
 }

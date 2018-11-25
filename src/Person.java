@@ -12,6 +12,7 @@ public class Person {
     private String gender;
     private boolean isTravelAgent;
 
+    // Constructor
     public Person(int personID, String firstName, String lastName, String phoneNumber, String gender, boolean isTravelAgent) {
         this.personID = personID;
         this.firstName = firstName;
@@ -21,6 +22,7 @@ public class Person {
         this.isTravelAgent = isTravelAgent;
     }
 
+    // Getters and Setters
     public int getPersonID() {
         return personID;
     }

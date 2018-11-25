@@ -9,6 +9,7 @@ public class Trip {
     private Date bookedOn;
     private List<String> destinations;
     private List<String> travelers;
+    private List<String> packages;
     private String thankYou;
     private Payment payment;
     private TripState.Status tripStateStatus;   // Holds Current State of Trip Object
@@ -18,6 +19,7 @@ public class Trip {
         tripStateStatus = TripState.Status.Create;
         destinations = new ArrayList<String>();
         travelers = new ArrayList<String>();
+        packages = new ArrayList<String>();
     }
 
     // Getters and Setters

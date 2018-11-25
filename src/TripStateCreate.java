@@ -10,6 +10,7 @@ public class TripStateCreate extends TripState {
         Trip trip = new Trip();
         trip.setBookedOn(new Date());
         trip.setOrderId(new Random().nextInt(10000));
+        //TODO: Need to check if trip ID is duplicate
         trip.setTripStateStatus(Status.Create);
 
         getTripContext().setTrip(trip);
@@ -19,8 +20,9 @@ public class TripStateCreate extends TripState {
     @Override
     public TripStateLoop.Status execute() {
         System.out.println();
-        System.out.println("----- New Trip Created -----");
-        getTripContext().changeState(new TripStateAddDestinations(getTripContext()));
+        System.out.println("NEW TRIP CREATED");
+        System.out.println();
+        getTripContext().changeState(new TripStateAddTravelers(getTripContext()));
 
         return TripStateLoop.Status.Continue;
     }

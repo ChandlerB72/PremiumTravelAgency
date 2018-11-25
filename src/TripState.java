@@ -49,6 +49,8 @@ public abstract class TripState {
 
     public enum Status {
         Create,
+        AddTravelers,
+        AddPackages,
         AddDestinations,
         ChoosePaymentType,
         PayCash,

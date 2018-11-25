@@ -4,10 +4,10 @@ public class Main {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //state loop will handle traversing through
-        //the various states until the user
-        //decides to return later (exit state loop with trip
-        //in an incomplete state) OR the trip is complete.
+
+        // Select Travel Agent
+
+        /////////////////////////////////////////////////////////////////////
         TripStateLoop tripStateLoop = new TripStateLoop();
         Trip trip;
 
@@ -22,10 +22,6 @@ public class Main {
         {
             showItinerary(trip);
 
-            //this loop simulates loading a trip from
-            //storage and passing it back into the trip state loop
-            //at the correct state to continue adding data
-            //or showing the final state (itinerary)
             System.out.println();
             System.out.println("Simulate trip reload to correct state? [yes]");
 

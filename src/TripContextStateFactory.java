@@ -16,8 +16,23 @@ public class TripContextStateFactory {
             case Create:
                 return new TripStateCreate(tripContext);
 
+            case AddTravelers:
+                return new TripStateAddTravelers(tripContext);
+
+            case AddPackages:
+                return new TripStateAddPackages(tripContext);
+
             case AddDestinations:
                 return new TripStateAddDestinations(tripContext);
+
+            case PayCash:
+                return new TripStatePayCash(tripContext);
+
+            case PayCheck:
+                return new TripStatePayCheck(tripContext);
+
+            case PayCreditCard:
+                return new TripStatePayCreditCard(tripContext);
 
             case ChoosePaymentType:
                 return new TripStateChoosePaymentType(tripContext);

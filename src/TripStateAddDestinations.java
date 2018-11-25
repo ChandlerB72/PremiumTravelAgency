@@ -10,7 +10,7 @@ public class TripStateAddDestinations extends TripState{
     // Methods
     private boolean isDestinationListValid() {
         if (getTripContext().getTrip().getDestinations().isEmpty()){
-            System.out.println("-- Error: No destinations. At least one destination required");
+            System.out.println("ERROR: No destinations. At least one destination required");
         return false;
     }
         return true;
@@ -18,13 +18,13 @@ public class TripStateAddDestinations extends TripState{
 
     private boolean isDestinationValid(String newDestination){
         if (newDestination.isEmpty()){
-            System.out.println("-- Error: Blank destinations are prohibited --");
+            System.out.println("ERROR: Blank destinations are prohibited --");
             return false;
         }
 
         boolean isDuplicate = getTripContext().getTrip().getDestinations().contains(newDestination);
         if (isDuplicate)
-            System.out.println("-- Error: You can't enter the same destination twice. --");
+            System.out.println("ERROR: You can't enter the same destination twice.");
 
         return !isDuplicate;
     }

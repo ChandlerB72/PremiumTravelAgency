@@ -11,7 +11,6 @@ public class TripStatePayCheck extends TripState{
     // Methods
     @Override
     public TripStateLoop.Status execute() {
-        System.out.println(System.lineSeparator());
         System.out.println("-- Check Payment Menu --");
         System.out.println("Please input a check number.");
         Scanner scanner = new Scanner(System.in);
@@ -37,7 +36,7 @@ public class TripStatePayCheck extends TripState{
 
                     int checkNumber = scanner.nextInt();
                     getTripContext().getTrip().setPayment(new PaymentCheck(new BigDecimal(userInput), checkNumber));
-                    System.out.println("-- Accepted " + checkNumber + " via check #" + userInput + " -- ");
+                    System.out.println("-- Accepted $" + checkNumber + " via check #" + userInput + " -- ");
                     getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
                     return TripStateLoop.Status.Continue;
 

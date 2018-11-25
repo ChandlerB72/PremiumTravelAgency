@@ -44,7 +44,7 @@ public class TripStatePayCreditCard extends TripState{
 
 
                     getTripContext().getTrip().setPayment(new PaymentCreditCard(new BigDecimal(userInput), creditCardNumber));
-                    System.out.println("--Accepted " + userInput + " via credit card (****" +
+                    System.out.println("--Accepted $" + userInput + " via credit card (****" +
                             creditCardNumber.substring(creditCardNumber.length() - 4) + ") --");
                     getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
                     return TripStateLoop.Status.Continue;

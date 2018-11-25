@@ -11,7 +11,6 @@ public class TripStatePayCash extends TripState{
     // Methods
     @Override
     public TripStateLoop.Status execute() {
-        System.out.println(System.lineSeparator());
         System.out.println("-- Cash Payment Menu --");
         System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter an amount to pay");
@@ -34,7 +33,7 @@ public class TripStatePayCash extends TripState{
 
             if (isNumeric(userInput)) {
                 getTripContext().getTrip().setPayment(new PaymentCash(new BigDecimal(userInput)));
-                System.out.println("--Accepted " + userInput + " via cash --");
+                System.out.println("--Accepted $" + userInput + " via cash --");
                 getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
                 return TripStateLoop.Status.Continue;
             }

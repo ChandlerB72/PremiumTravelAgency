@@ -10,7 +10,7 @@ public class ItineraryAppendDestinations extends ItineraryDecorator{
     public String output() {
         StringBuilder toOutput = new StringBuilder(super.output());
 
-        toOutput.append("Destinations");
+        toOutput.append("DESTINATIONS");
 
         toOutput.append(System.lineSeparator());
         toOutput.append(System.lineSeparator());

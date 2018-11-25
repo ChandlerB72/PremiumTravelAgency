@@ -8,8 +8,8 @@ public class Trip {
     private long orderId;
     private Date bookedOn;
     private List<String> destinations;
-    private List<String> travelers;
-    private List<String> packages;
+    private List<Person> travelers;
+    private List<Package> packages;
     private String thankYou;
     private Payment payment;
     private TripState.Status tripStateStatus;   // Holds Current State of Trip Object
@@ -18,8 +18,8 @@ public class Trip {
     public Trip() {
         tripStateStatus = TripState.Status.Create;
         destinations = new ArrayList<String>();
-        travelers = new ArrayList<String>();
-        packages = new ArrayList<String>();
+        travelers = new ArrayList<Person>();
+        packages = new ArrayList<Package>();
     }
 
     // Getters and Setters
@@ -47,12 +47,20 @@ public class Trip {
         this.destinations = destinations;
     }
 
-    public List<String> getTravelers() {
+    public List<Person> getTravelers() {
         return travelers;
     }
 
-    public void setTravelers(List<String> travelers) {
+    public void setTravelers(List<Person> travelers) {
         this.travelers = travelers;
+    }
+
+    public List<Package> getPackages() {
+        return packages;
+    }
+
+    public void setPackages(List<Package> packages) {
+        this.packages = packages;
     }
 
     public String getThankYou() {

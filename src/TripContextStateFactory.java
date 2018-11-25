@@ -17,10 +17,10 @@ public class TripContextStateFactory {
                 return new TripStateCreate(tripContext);
 
             case AddTravelers:
-                return new TripStateAddTravelers(tripContext);
+                return new TripStateAddTraveler(tripContext); // Travelers
 
             case AddPackages:
-                return new TripStateAddPackages(tripContext);
+                return new TripStateAddPackage(tripContext); //Packages
 
             case AddDestinations:
                 return new TripStateAddDestinations(tripContext);

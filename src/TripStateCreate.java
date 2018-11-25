@@ -22,7 +22,7 @@ public class TripStateCreate extends TripState {
         System.out.println();
         System.out.println("NEW TRIP CREATED");
         System.out.println();
-        getTripContext().changeState(new TripStateAddTravelers(getTripContext()));
+        getTripContext().changeState(new TripStateAddTraveler(getTripContext()));
 
         return TripStateLoop.Status.Continue;
     }

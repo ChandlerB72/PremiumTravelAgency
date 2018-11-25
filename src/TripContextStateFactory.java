@@ -22,9 +22,6 @@ public class TripContextStateFactory {
             case AddPackages:
                 return new TripStateAddPackage(tripContext); //Packages
 
-            case AddDestinations:
-                return new TripStateAddDestinations(tripContext);
-
             case PayCash:
                 return new TripStatePayCash(tripContext);
 

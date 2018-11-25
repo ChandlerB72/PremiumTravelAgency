@@ -11,6 +11,7 @@ public class TripStatePayCreditCard extends TripState{
     // Methods
     @Override
     public TripStateLoop.Status execute() {
+        System.out.println();
         System.out.println("-- Credit Card Payment Menu --");
         System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter an amount to pay");

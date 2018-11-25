@@ -10,7 +10,7 @@ public class ItineraryFactory {
         itinerary = new ItineraryAppendSeparator(itinerary);
         itinerary = new ItineraryAppendTravelers(itinerary);
         itinerary = new ItineraryAppendSeparator(itinerary);
-        itinerary = new ItineraryAppendDestinations(itinerary);
+        itinerary = new ItineraryAppendPackages(itinerary);
         itinerary = new ItineraryAppendSeparator(itinerary);
         itinerary = new ItineraryAppendThanks(itinerary);
         itinerary = new ItineraryAppendSeparator(itinerary);

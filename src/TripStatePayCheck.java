@@ -11,6 +11,7 @@ public class TripStatePayCheck extends TripState{
     // Methods
     @Override
     public TripStateLoop.Status execute() {
+        System.out.println();
         System.out.println("-- Check Payment Menu --");
         System.out.println("Please input a check number.");
         Scanner scanner = new Scanner(System.in);

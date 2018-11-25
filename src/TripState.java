@@ -51,8 +51,6 @@ public abstract class TripState {
         Create,
         AddTravelers,
         AddPackages,
-        AddPackage, // DELETE THIS ONE
-        AddDestinations,
         ChoosePaymentType,
         PayCash,
         PayCheck,

@@ -21,25 +21,28 @@ public class TripStatePayCash extends TripState{
 
         // Navigates to new state and/or pays amount based off user input
         while (true) {
-            String userInput = new String();
+            System.out.println(getTripContext().getTrip().getBill().Describe());
+            String userInput = scanner.nextLine().trim();
 
-            if (scanner.hasNext())
-                userInput = scanner.next().trim().toLowerCase();
-
+            // Check for return later
             if (returnLater(userInput))
                 return TripStateLoop.Status.Stop;
 
-            if (userInput.isEmpty())
-                continue;
+            //Check for numerical input
+            if (isNumeric(userInput)){
+                getTripContext().getTrip().getBill().setPayment(new PaymentCash(new BigDecimal(userInput)));
 
-            if (isNumeric(userInput)) {
-                getTripContext().getTrip().setPayment(new PaymentCash(new BigDecimal(userInput)));
-                System.out.println("--Accepted $" + userInput + " via cash --");
-                getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
-                return TripStateLoop.Status.Continue;
+                if (getTripContext().getTrip().getBill().isPaidInFull()){
+                    getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
+                    return TripStateLoop.Status.Continue;
+                }
+
+                else{
+                    System.out.println("Continue Payments..");
+                }
             }
-
-            System.out.println("ERROR: Selection invalid. Please try again! --");
+            else
+                System.out.println("ERROR: Please input an amount to pay or [later] to save and quit");
         }
     }
 }

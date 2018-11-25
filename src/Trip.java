@@ -11,7 +11,7 @@ public class Trip {
     private List<Person> travelers;
     private List<Package> packages;
     private String thankYou;
-    private Payment payment;
+    private Bill bill;
     private TripState.Status tripStateStatus;   // Holds Current State of Trip Object
 
     // Constructors
@@ -20,6 +20,7 @@ public class Trip {
         destinations = new ArrayList<String>();
         travelers = new ArrayList<Person>();
         packages = new ArrayList<Package>();
+        bill = new Bill();
     }
 
     // Getters and Setters
@@ -71,12 +72,12 @@ public class Trip {
         this.thankYou = thankYou;
     }
 
-    public Payment getPayment() {
-        return payment;
+    public Bill getBill() {
+        return bill;
     }
 
-    public void setPayment(Payment payment) {
-        this.payment = payment;
+    public void setBill(Bill bill) {
+        this.bill = bill;
     }
 
     public TripState.Status getTripStateStatus() {

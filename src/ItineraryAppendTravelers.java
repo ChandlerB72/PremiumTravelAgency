@@ -19,7 +19,7 @@ public class ItineraryAppendTravelers extends ItineraryDecorator{
             toOutput.append(traveler + 1);
             toOutput.append(". ");
             toOutput.append(getTrip().getTravelers().get(traveler).getFirstName() + " " +
-                    getTrip().getTravelers().get(traveler).getFirstName());
+                    getTrip().getTravelers().get(traveler).getLastName());
             toOutput.append(System.lineSeparator());
         }
 

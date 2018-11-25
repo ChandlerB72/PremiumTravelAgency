@@ -3,8 +3,8 @@ import java.math.BigDecimal;
 public class PaymentCash extends Payment {
 
     // Constructor
-    public PaymentCash(BigDecimal amount) {
-        super(amount);
+    public PaymentCash(BigDecimal amountPaid) {
+        super(amountPaid);
     }
 
     // Methods

@@ -1,19 +1,19 @@
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class TripStateChoosePaymentType extends TripState{
 
     // Constructor
-
     public TripStateChoosePaymentType(TripContext tripContext) {
         super (tripContext, Status.ChoosePaymentType);
     }
-
-    // Methods
 
     @Override
     public TripStateLoop.Status execute() {
         System.out.println();
         System.out.println("-- Payment Menu --");
+
+        System.out.println();
         System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter [cash] to pay by cash");
         System.out.println("\t : Enter [check] to pay by check");

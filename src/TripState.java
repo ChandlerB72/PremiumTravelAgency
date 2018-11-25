@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 public abstract class TripState {
 
     // Variables
@@ -34,14 +36,10 @@ public abstract class TripState {
         return returnLater;
     }
 
-    public static boolean isNumeric(String str)
-    {
-        try
-        {
+    public static boolean isNumeric(String str) {
+        try {
             double d = Double.parseDouble(str);
-        }
-        catch(NumberFormatException nfe)
-        {
+        } catch (NumberFormatException nfe) {
             return false;
         }
         return true;

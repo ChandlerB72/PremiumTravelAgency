@@ -13,43 +13,68 @@ public class TripStatePayCheck extends TripState{
     public TripStateLoop.Status execute() {
         System.out.println();
         System.out.println("-- Check Payment Menu --");
-        System.out.println("Please input a check number.");
+        System.out.println("Please select one of the following: ");
+        System.out.println("\t : Enter an amount to pay");
+        System.out.println("\t : Enter [later] to save and return to payment details later");
         Scanner scanner = new Scanner(System.in);
 
         // Navigates to new state and/or pays amount based off user input
-        while (true){
-            String userInput = new String();
+        while (true) {
+            System.out.println(getTripContext().getTrip().getBill().Describe());
+            String userInput = scanner.nextLine().trim();
 
-            if (scanner.hasNext())
-                userInput = scanner.next().trim().toLowerCase();
-
+            // Check for return later
             if (returnLater(userInput))
                 return TripStateLoop.Status.Stop;
 
-            if (userInput.isEmpty())
-                continue;
+            //Check for numerical input
+            if (isNumeric(userInput)){
+                System.out.println("Please enter the check number.");
+                int checkNumber = scanner.nextInt();
+                getTripContext().getTrip().getBill().setPayment(new PaymentCheck(new BigDecimal(userInput),checkNumber));
 
-            if (isNumeric(userInput)) {
-                try {
-                    System.out.println("Please select one of the following: ");
-                    System.out.println("\t : Enter an amount to pay");
-                    System.out.println("\t : Enter [later] to save and return to payment details later");
-
-                    int checkNumber = scanner.nextInt();
-                    getTripContext().getTrip().setPayment(new PaymentCheck(new BigDecimal(userInput), checkNumber));
-                    System.out.println("-- Accepted $" + checkNumber + " via check #" + userInput + " -- ");
+                if (getTripContext().getTrip().getBill().isPaidInFull()){
                     getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
                     return TripStateLoop.Status.Continue;
+                }
 
-                } catch (Exception e){
-
-                    System.out.println("ERROR: Input invalid. Please only use numbers.");
-                    continue;
-
+                else{
+                    System.out.println("Continue Payments..");
                 }
             }
+            else
+                System.out.println("ERROR: Please input an amount to pay or [later] to save and quit");
 
-            System.out.println("ERROR: Selection invalid. Please try again!");
         }
     }
 }
+
+
+//            if (scanner.hasNext())
+//                userInput = scanner.next().trim().toLowerCase();
+//
+//            if (returnLater(userInput))
+//                return TripStateLoop.Status.Stop;
+//
+//            if (userInput.isEmpty())
+//                continue;
+//
+//            if (isNumeric(userInput)) {
+//                try {
+//                    System.out.println("Please input a check number.");
+//
+//                    int checkNumber = scanner.nextInt();
+//                    getTripContext().getTrip().getBill().setPayment(new PaymentCheck(new BigDecimal(userInput), checkNumber));
+//                    System.out.println("Accepted $" + userInput + " via check #" + checkNumber + "!");
+//                    getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
+//                    return TripStateLoop.Status.Continue;
+//
+//                } catch (Exception e){
+//                    System.out.println("ERROR: Input invalid. Please only use numbers.");
+//                    continue;
+//                }
+//            }
+//
+//            // Check for return later
+//            if (returnLater(userInput))
+//                return TripStateLoop.Status.Stop;

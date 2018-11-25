@@ -20,43 +20,41 @@ public class TripStatePayCreditCard extends TripState{
         Scanner scanner = new Scanner(System.in);
 
         // Navigates to new state and/or pays amount based off user input
-        while (true){
-            String userInput = scanner.next().trim();
+        while (true) {
+            System.out.println(getTripContext().getTrip().getBill().Describe());
+            String userInput = scanner.nextLine().trim();
 
-            // Check for Return Later
+            // Check for return later
             if (returnLater(userInput))
                 return TripStateLoop.Status.Stop;
 
-            // Will output error located at bottom of loop
-            if (userInput.isEmpty())
-                continue;
+            //Check for numerical input
+            if (isNumeric(userInput)){
 
-            if (isNumeric(userInput)) {
-                try {
-                    System.out.println("Please input your credit card number.");
-                    String creditCardNumber = scanner.next().trim();
+                System.out.println("Please enter the credit card number");
+                String creditCardNumber = scanner.next().trim();
 
-                    // Ensure Credit Card is 16 digits
-                    while (creditCardNumber.length() != 16){
-                        System.out.println("ERROR: Input invalid. Credit card number must be 16 digits!");
-                        creditCardNumber = ""; //Resetting credit card number
-                        creditCardNumber = scanner.next().trim();
-                    }
+                // Ensure Credit Card is 16 digits
+                while (creditCardNumber.length() != 16){
+                    System.out.println("ERROR: Input invalid. Credit card number must be 16 digits!");
+                    creditCardNumber = ""; //Resetting credit card number
+                    creditCardNumber = scanner.next().trim();
+                }
 
+                getTripContext().getTrip().getBill().setPayment(new PaymentCreditCard(new BigDecimal(userInput),creditCardNumber));
 
-                    getTripContext().getTrip().setPayment(new PaymentCreditCard(new BigDecimal(userInput), creditCardNumber));
-                    System.out.println("--Accepted $" + userInput + " via credit card (****" +
-                            creditCardNumber.substring(creditCardNumber.length() - 4) + ") --");
+                if (getTripContext().getTrip().getBill().isPaidInFull()){
                     getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
                     return TripStateLoop.Status.Continue;
+                }
 
-                } catch (Exception e) {
-                    System.out.println("ERROR: Input invalid. Please only use numbers.");
-                    continue;
+                else{
+                    System.out.println("Continue Payments..");
                 }
             }
+            else
+                System.out.println("ERROR: Please input an amount to pay or [later] to save and quit");
 
-            System.out.println("ERROR: Selection invalid. Please try again!");
         }
     }
 }

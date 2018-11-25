@@ -1,23 +1,26 @@
 import java.math.BigDecimal;
 
-public abstract class Payment {
+public abstract class Payment{
 
     // Variables
-    private BigDecimal amount;
+    private BigDecimal amountPaid;
 
-    // Constructor
-    protected Payment(BigDecimal amount) {
-        this.amount = amount;
+    // Constructors
+    public Payment(BigDecimal amountPaid ) { //Call from child
+        this.amountPaid = amountPaid;
     }
 
-    // Getters and Setters
-    public BigDecimal getAmount() {
-        return amount;
+    public BigDecimal getAmountPaid() {
+        return amountPaid;
+    }
+
+    public void setAmountPaid(BigDecimal amountPaid) {
+        this.amountPaid = amountPaid;
     }
 
     // Methods
     public String Describe() {
-        return "Amount Paid: $" + amount;
+        return "Paid " + getAmountPaid();
     }
 
     @Override

@@ -1,8 +1,10 @@
+import java.math.BigDecimal;
+
 public class Package {
 
     // Variables
     private int packageID;
-    private double price;
+    private BigDecimal price;
     private int hoursOfTravelTime;
     private String travelTo;
     private String travelFrom;
@@ -13,7 +15,7 @@ public class Package {
         this.travelFrom = travelFrom;
     }
 
-    public Package(int packageID, double price, int hoursOfTravelTime, String travelTo, String travelFrom) {
+    public Package(int packageID, BigDecimal price, int hoursOfTravelTime, String travelFrom, String travelTo) {
         this.packageID = packageID;
         this.price = price;
         this.hoursOfTravelTime = hoursOfTravelTime;
@@ -22,11 +24,11 @@ public class Package {
     }
 
     // Getters and Setters
-    public double getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 
@@ -56,6 +58,6 @@ public class Package {
 
     @Override
     public String toString() {
-        return packageID + "\t$" + price + "\t" + hoursOfTravelTime + "\t" + travelTo + " to " + travelFrom;
+        return packageID + "\t$" + price + "\t" + hoursOfTravelTime + "\t" + travelFrom + " to " + travelTo;
     }
 }

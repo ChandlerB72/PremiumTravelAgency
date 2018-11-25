@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -89,7 +90,7 @@ public class TripStateAddPackage extends TripState{
             // Data Validation
             if (continueEnteringPackages(userInput)) {
                 if (isPackageValid(userInput)) {
-                    selectedPackages.add(packageOptions.get(Integer.parseInt(userInput)));
+                    selectedPackages.add(packageOptions.get(Integer.parseInt(userInput)-1));
                     getTripContext().getTrip().setPackages(selectedPackages);
                     System.out.println("Package #" + userInput + " Added! - (" +
                             packageOptions.get(Integer.parseInt(userInput)-1).getTravelFrom() + " to " +
@@ -100,6 +101,13 @@ public class TripStateAddPackage extends TripState{
                 getPackages = !isPackageListValid();
             }
         }
+
+        BigDecimal price = new BigDecimal(0);
+        for (int p = 0; p < getTripContext().getTrip().getPackages().size(); p++) {
+            price = price.add(getTripContext().getTrip().getPackages().get(p).getPrice());
+        }
+        // Multiply Calculated Price by Number of Travelers
+        getTripContext().getTrip().getBill().setPrice(price.multiply(new BigDecimal(getTripContext().getTrip().getTravelers().size())));
 
         getTripContext().changeState(new TripStateChoosePaymentType(getTripContext()));
         return TripStateLoop.Status.Continue;

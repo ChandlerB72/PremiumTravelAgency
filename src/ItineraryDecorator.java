@@ -1,19 +1,26 @@
+/**
+ *
+ */
 public abstract class ItineraryDecorator implements iItineraryComponent{
 
-    // Variables
-    private final iItineraryComponent componentToDecorate;
+    private final iItineraryComponent componentToDecorate; /*< Holds iItineraryComponent instance to be decorated */
 
-    // Constructor
+    //! Constructor
     protected ItineraryDecorator(iItineraryComponent componentToDecorate) {
         this.componentToDecorate = componentToDecorate;
     }
 
-    // Methods
+    /**
+     * @return trip that itinerary is describing
+     */
     @Override
     public Trip getTrip() {
         return componentToDecorate.getTrip();
     }
 
+    /**
+     * @return String holding itinerary
+     */
     @Override
     public String output() {
         return componentToDecorate.output();

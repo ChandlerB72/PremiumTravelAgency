@@ -1,11 +1,17 @@
+/**
+ * Responsible for adding Separator to itinerary
+ */
 public class ItineraryAppendSeparator extends ItineraryDecorator{
 
-    // Constructor
+    //! Constructor
     public ItineraryAppendSeparator(iItineraryComponent componentToDecorate) {
         super(componentToDecorate);
     }
 
-    // Methods
+
+    /**
+     * @return Separator Component of Itinerary
+     */
     @Override
     public String output() {
         StringBuilder toOutput = new StringBuilder(super.output());

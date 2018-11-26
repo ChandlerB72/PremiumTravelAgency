@@ -39,6 +39,12 @@ public class TripStateAddPackage extends TripState{
             return false;
         }
 
+        // Check that num is in range
+        if(packageID <= 0 && packageID >= packageOptions.size()){
+            System.out.println("ERROR: Invalid input. ID is incorrect.");
+            return false;
+        }
+
         // Check for duplicate entry
         boolean isDuplicate = getTripContext().getTrip().getPackages().contains(packageOptions.get(packageID));
         if (isDuplicate) {
@@ -62,6 +68,9 @@ public class TripStateAddPackage extends TripState{
         // Variables
         List<Package> selectedPackages = new ArrayList<>();
         Scanner scanner=  new Scanner(System.in);
+
+        System.out.println();
+        System.out.println("-- Package Menu --");
 
         // Prints Package Options
         System.out.println("ID\tPrice\tHrs\tDeparture to Arrival");

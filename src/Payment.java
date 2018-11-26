@@ -1,40 +1,49 @@
 import java.math.BigDecimal;
 
+/**
+ * Bill is the object that holds all of the pricing
+ * and payment information for the Trip object.
+ */
 public class Payment{
 
-    // Variables
-    private BigDecimal amountPaid;
-    private Person personPaying;
+    private BigDecimal amountPaid; /*< Amount the person is paying*/
+    private Person personPaying; /*< Person object who is paying the payment*/
 
-    // Constructor
+    //! Constructor
     public Payment(){}
 
+    //! Constructor
     public Payment(BigDecimal amountPaid) {
         this.amountPaid = amountPaid;
     }
 
-    // Getters and Setters
+    //! Getters and Setters
     public BigDecimal getAmountPaid() {
         return amountPaid;
     }
-
     public void setAmountPaid(BigDecimal amountPaid) {
         this.amountPaid = amountPaid;
     }
 
+    //! Getters and Setters
     public Person getPersonPaying() {
         return personPaying;
     }
-
     public void setPersonPaying(Person personPaying) {
         this.personPaying = personPaying;
     }
 
-    // Methods
+
+    /**
+     * @return Description of payment
+     */
     public String Describe() {
         return "Paid " + getAmountPaid();
     }
 
+    /**
+     * @return Payment information via String
+     */
     @Override
     public String toString() {
         return Describe();

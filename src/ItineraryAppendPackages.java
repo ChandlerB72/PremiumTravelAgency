@@ -1,12 +1,17 @@
+/**
+ * Responsible for adding Packages to itinerary
+ */
 public class ItineraryAppendPackages extends ItineraryDecorator {
 
-    // Constructor
+    //! Constructor
     public ItineraryAppendPackages(iItineraryComponent componentToDecorate) {
         super(componentToDecorate);
     }
 
-    // Methods
 
+    /**
+     * @return Packages Component of Itinerary
+     */
     @Override
     public String output() {
         StringBuilder toOutput = new StringBuilder(super.output());

@@ -2,12 +2,14 @@ import java.math.BigDecimal;
 
 public class PaymentCash extends Payment {
 
-    // Constructor
+    //! Constructor
     public PaymentCash(BigDecimal amountPaid) {
         super(amountPaid);
     }
 
-    // Methods
+    /**
+     * @return Payment information via String
+     */
     @Override
     public String Describe() {
         return super.Describe() + " via Cash";

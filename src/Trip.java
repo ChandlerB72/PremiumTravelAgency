@@ -2,16 +2,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-//Jackson JSON serializer/deserializer
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 public class Trip {
 
     //Variables
-    @JsonProperty
     private long orderId;
     private Date bookedOn;
     private List<String> destinations;

@@ -1,6 +1,13 @@
+/**
+ * Responsible for creating the itinerary
+ */
 public class ItineraryFactory {
 
-    // Methods
+    /**
+     * @param trip trip to display itinerary for
+     * @return String holding itinerary
+     * @throws Exception
+     */
     public static String get(Trip trip) throws Exception{
         ValidateTripCanProduceItinerary(trip);
 
@@ -18,13 +25,23 @@ public class ItineraryFactory {
         return itinerary.output();
     }
 
-    // Validates Trip and Trip Status is able to produce Itinerary
+
+    /**
+     * Validates Trip and Trip Status is able to produce Itinerary
+     * @param trip Trip trip to display itinerary for
+     * @return if trip is in correct state to create itinerary
+     */
     public static boolean TripCanProduceItinerary(Trip trip){
         assert trip != null : "trip != null";
 
         return trip.getTripStateStatus() == TripState.Status.Complete;
     }
 
+    /**
+     *
+     * @param trip trip to display itinerary for
+     * @throws Exception
+     */
     public static void ValidateTripCanProduceItinerary(Trip trip) throws Exception{
         assert trip != null : "trip != null";
 

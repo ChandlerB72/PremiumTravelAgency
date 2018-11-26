@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Travel Agents Singleton
+ */
 public class LoadTravelAgents {
     // Singleton
     private static final Object syncLock = new Object();
@@ -14,11 +17,11 @@ public class LoadTravelAgents {
         if (loadTravelAgents == null){
             synchronized (syncLock){
                 if (loadTravelAgents == null){
-                    travelAgentList.add(new TravelAgent(1,"Pennie", "Paterno","770-555-0001", "Female", true));
-                    travelAgentList.add(new TravelAgent(2,"Cristobal", "Counce","770-555-0002", "Female", true));
-                    travelAgentList.add(new TravelAgent(3,"Glady", "Gosse","770-555-0003", "Male", true));
-                    travelAgentList.add(new TravelAgent(4,"Liana", "Lindeman","770-555-0004", "Female", true));
-                    travelAgentList.add(new TravelAgent(5,"Kris", "Kilgo", "770-555-0005", "Male", true));
+                    travelAgentList.add(new TravelAgent(1,"Jeff", "Adkisson","770-555-0001", true));
+                    travelAgentList.add(new TravelAgent(2,"Marco", "Alfaro","770-555-0002", true));
+                    travelAgentList.add(new TravelAgent(3,"Muhammad", "Ali","770-555-0003", true));
+                    travelAgentList.add(new TravelAgent(4,"Myles", "Andre","770-555-0004",  true));
+                    travelAgentList.add(new TravelAgent(5,"Hunter", "Black", "770-555-0005", true));
                 }
             }
         }

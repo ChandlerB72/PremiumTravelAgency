@@ -1,11 +1,17 @@
+/**
+ * Responsible for adding Thanks to itinerary
+ */
 public class ItineraryAppendThanks extends ItineraryDecorator{
 
-    // Constructor
+    //! Constructor
     public ItineraryAppendThanks(iItineraryComponent componentToDecorate) {
         super(componentToDecorate);
     }
 
-    // Methods
+
+    /**
+     * @return Thanks Component of Itinerary
+     */
     @Override
     public String output() {
         StringBuilder toOutput = new StringBuilder(super.output());

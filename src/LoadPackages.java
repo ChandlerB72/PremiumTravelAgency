@@ -3,8 +3,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Package Singleton
+ */
 public class LoadPackages {
-    // Package Singleton
     private static final Object syncLock = new Object();
     private static volatile LoadPackages loadPackages;
     private static List packageList = new ArrayList();

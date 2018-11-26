@@ -1,11 +1,17 @@
+/**
+ * Responsible for adding Travelers to itinerary
+ */
 public class ItineraryAppendTravelers extends ItineraryDecorator{
 
-    // Constructor
+    //! Constructor
     public ItineraryAppendTravelers(iItineraryComponent componentToDecorate) {
         super(componentToDecorate);
     }
 
-    // Methods
+
+    /**
+     * @return Travelers Component of Itinerary
+     */
     @Override
     public String output() {
         StringBuilder toOutput = new StringBuilder(super.output());

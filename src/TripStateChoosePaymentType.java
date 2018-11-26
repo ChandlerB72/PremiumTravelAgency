@@ -15,7 +15,7 @@ public class TripStateChoosePaymentType extends TripState{
 
         // Prints Package Options
         System.out.println("ID\t|Name");
-        System.out.println("----+-------------------------------------");
+        System.out.println("-----------------------------------------");
         for (int p = 0; p < payingPersonOptions.size(); p++) {
             System.out.println(payingPersonOptions.get(p).toString());
         }
@@ -28,14 +28,15 @@ public class TripStateChoosePaymentType extends TripState{
         while (selectPersonPaying) {
             String userInput = scanner.nextLine().trim();
 
-            // Check that num is in range
-            if (personID >= 0 && personID >= payingPersonOptions.size()) {
-                System.out.println("ERROR: Invalid input. ID is incorrect.");
-            }
-
             // Check that input can be parsed
             try{
                 personID = Integer.parseInt(userInput);
+
+                // Check that num is in range
+                if (personID <= 0 && personID >= payingPersonOptions.size()) {
+                    System.out.println("ERROR: Invalid input. ID is incorrect.");
+                }
+
                 personID = personID - 1;
                 System.out.println("Person Selected: " + payingPersonOptions.get(personID).getFirstName() + " " +
                         payingPersonOptions.get(personID).getLastName());

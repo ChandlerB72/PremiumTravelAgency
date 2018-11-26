@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Traveler extends Person{
 
-    public Traveler(int personID, String firstName, String lastName, String phoneNumber, String gender, boolean isTravelAgent) {
-        super(personID, firstName, lastName, phoneNumber, gender, isTravelAgent);
+    public Traveler(int personID, String firstName, String lastName, String phoneNumber, boolean isTravelAgent) {
+        super(personID, firstName, lastName, phoneNumber, isTravelAgent);
     }
 
     @Override

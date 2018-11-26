@@ -1,11 +1,16 @@
+/**
+ * Responsible for adding Booking Details to itinerary
+ */
 public class ItineraryAppendBookingDetails extends ItineraryDecorator {
 
-    // Constructor
-
+    //! Constructor
     public ItineraryAppendBookingDetails(iItineraryComponent componentToDecorate) {
         super(componentToDecorate);
     }
 
+    /**
+     * @return Booking Details Component of Itinerary
+     */
     @Override
     public String output() {
         String toOutput = super.output();

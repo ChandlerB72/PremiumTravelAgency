@@ -9,16 +9,14 @@ public class Person {
     private String firstName;
     private String lastName;
     private String phoneNumber;
-    private String gender;
     private boolean isTravelAgent;
 
     // Constructor
-    public Person(int personID, String firstName, String lastName, String phoneNumber, String gender, boolean isTravelAgent) {
+    public Person(int personID, String firstName, String lastName, String phoneNumber, boolean isTravelAgent) {
         this.personID = personID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
-        this.gender = gender;
         this.isTravelAgent = isTravelAgent;
     }
 
@@ -39,9 +37,6 @@ public class Person {
         return phoneNumber;
     }
 
-    public String getGender() {
-        return gender;
-    }
 
     @Override
     public String toString() {

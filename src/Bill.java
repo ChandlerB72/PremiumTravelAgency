@@ -7,12 +7,12 @@ import java.math.BigDecimal;
 public class Bill {
 
     // Variables
-    private BigDecimal price;
-    private BigDecimal balance;
-    private boolean paidInFull;
-    private Payment payment;
+    private BigDecimal price; /*!< Holds the total price of the trip*/
+    private BigDecimal balance; /*!< Holds the current balance of the trip*/
+    private boolean paidInFull; /*!< Holds if trip paid in full*/
+    private Payment payment; /*!< Holds payment object*/
 
-    // Constructor
+    //! Constructor
     public Bill() {
         this.price = new BigDecimal(0);
         this.balance = new BigDecimal(0);
@@ -20,7 +20,7 @@ public class Bill {
         this.payment = new Payment();
     }
 
-    // Getters and Setters
+    //! Getter and Setter
     public BigDecimal getPrice() {
         return price;
     }
@@ -28,18 +28,24 @@ public class Bill {
         this.price = price;
         setBalance(price);
     }
+
+    //! Getter and Setter
     public BigDecimal getBalance() {
         return balance;
     }
     public void setBalance(BigDecimal balance) {
         this.balance = balance;
     }
+
+    //! Getter and Setter
     public boolean isPaidInFull() {
         return paidInFull;
     }
     public void setPaidInFull(boolean paidInFull) {
         this.paidInFull = paidInFull;
     }
+
+    //! Getter and Setter
     public Payment getPayment() {
         return payment;
     }

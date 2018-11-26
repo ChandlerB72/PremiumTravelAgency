@@ -20,7 +20,7 @@ public class TripStateCreate extends TripState {
     @Override
     public TripStateLoop.Status execute() {
         System.out.println();
-        System.out.println("NEW TRIP CREATED");
+        System.out.println("----- PREMIUM TRAVEL SERVICES TRIP RESERVATION SYSTEM -----");
         System.out.println();
         getTripContext().changeState(new TripStateAddTraveler(getTripContext()));
 

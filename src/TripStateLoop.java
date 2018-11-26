@@ -12,8 +12,6 @@ public class TripStateLoop {
 
         while (tripContext.execute() == Status.Continue){}
 
-        System.out.println();
-        System.out.println("TRIP LOOP HAS STOPPED");
 
 
 

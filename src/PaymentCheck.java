@@ -2,22 +2,22 @@ import java.math.BigDecimal;
 
 public class PaymentCheck extends Payment{
 
-    // Variables
-    private int checkNumber;
+    private int checkNumber; /*<  Holds check number for payment*/
 
-    // Constructor
-
+    //! Constructor
     public PaymentCheck(BigDecimal amountPaid, int checkNumber) {
         super(amountPaid);
         this.checkNumber = checkNumber;
     }
 
-    // Getters and Setters
+    // Getters
     public int getCheckNumber() {
         return checkNumber;
     }
 
-    // Methods
+    /**
+     * @return Payment information via String
+     */
     @Override
     public String Describe() {
         return super.Describe() + " via Check (" + checkNumber + ")";

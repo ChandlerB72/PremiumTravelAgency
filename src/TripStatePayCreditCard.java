@@ -43,6 +43,7 @@ public class TripStatePayCreditCard extends TripState{
 
                 getTripContext().getTrip().getBill().setPayment(new PaymentCreditCard(new BigDecimal(userInput),creditCardNumber));
 
+                // Check if bill is fully paid
                 if (getTripContext().getTrip().getBill().isPaidInFull()){
                     getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
                     return TripStateLoop.Status.Continue;
@@ -50,6 +51,7 @@ public class TripStatePayCreditCard extends TripState{
 
                 else{
                     System.out.println("Continue Payments..");
+                    continue;
                 }
             }
             else

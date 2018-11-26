@@ -1,5 +1,7 @@
 import java.math.BigDecimal;
-
+/* This class holds the bill total
+ *
+ */
 public class Bill {
     private BigDecimal price;
     private BigDecimal balance;
@@ -10,6 +12,7 @@ public class Bill {
         this.price = new BigDecimal(0);
         this.balance = new BigDecimal(0);
         this.paidInFull = false;
+        this.payment = new Payment();
     }
 
     public BigDecimal getPrice() {

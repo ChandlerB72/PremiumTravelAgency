@@ -20,7 +20,7 @@ public class TripStateAddTraveler extends TripState{
         return !done;
     }
 
-    public boolean isPackageValid(String userInput){
+    public boolean isTravelerValid(String userInput){
         // Variable
         int personID;
 
@@ -40,7 +40,7 @@ public class TripStateAddTraveler extends TripState{
         }
 
         // Check that num is in range
-        if(personID <= 0 || personID >= personOptions.size()){
+        if(personID >= 0 && personID >= personOptions.size()){
             System.out.println("ERROR: Invalid input. ID is incorrect.");
             return false;
         }
@@ -80,7 +80,7 @@ public class TripStateAddTraveler extends TripState{
         // User Prompt
         System.out.println();
         System.out.println("Please select one of the following: ");
-        System.out.println("\t : Enter personID from list");
+        System.out.println("\t : Enter ID number of person from list");
         System.out.println("\t : Enter [later] to save and return to add package later");
 
         boolean getTravelers = true;
@@ -95,7 +95,7 @@ public class TripStateAddTraveler extends TripState{
 
             // Data Validation
             if (continueEnteringTravelers(userInput)) {
-                if (isPackageValid(userInput)) {
+                if (isTravelerValid(userInput)) {
 
                     // Data Validated - Add to List and Give User Confirmation
                     selectedPersons.add(personOptions.get(Integer.parseInt(userInput)-1));

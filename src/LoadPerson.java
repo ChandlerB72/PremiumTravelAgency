@@ -8,12 +8,14 @@ public class LoadPerson {
     private static volatile LoadPerson loadPerson;
     private static List travelerList = new ArrayList();
 
-    private LoadPerson() {}
+    private LoadPerson() {
+    }
 
     public static List getInstance(){
         if (loadPerson == null){
             synchronized (syncLock){
                 if (loadPerson == null){
+                    travelerList = new ArrayList(); // Preventing list from duplicated when being loaded in other places
                     travelerList.add(new TravelAgent(1,"Pennie", "Paterno","770-555-0001", "Female", true));
                     travelerList.add(new TravelAgent(2,"Cristobal", "Counce","770-555-0002", "Female", true));
                     travelerList.add(new TravelAgent(3,"Glady", "Gosse","770-555-0003", "Male", true));

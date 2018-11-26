@@ -73,7 +73,7 @@ public class TripStateAddPackage extends TripState{
         // User Prompt
         System.out.println();
         System.out.println("Please select one of the following: ");
-        System.out.println("\t : Enter packageID from list");
+        System.out.println("\t : Enter ID of package from list");
         System.out.println("\t : Enter [later] to save and return to add package later");
 
 

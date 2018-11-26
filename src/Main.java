@@ -38,10 +38,6 @@ public class Main {
         }
     }
 
-    /// <summary>
-    ///     Displays itinerary, if possible
-    /// </summary>
-    /// <param name="trip"></param>
     private static void showItinerary(Trip trip)
     {
         if (ItineraryFactory.TripCanProduceItinerary(trip))

@@ -33,6 +33,7 @@ public class TripStatePayCheck extends TripState{
                 int checkNumber = scanner.nextInt();
                 getTripContext().getTrip().getBill().setPayment(new PaymentCheck(new BigDecimal(userInput),checkNumber));
 
+                // Check if bill is fully paid
                 if (getTripContext().getTrip().getBill().isPaidInFull()){
                     getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
                     return TripStateLoop.Status.Continue;
@@ -40,6 +41,7 @@ public class TripStatePayCheck extends TripState{
 
                 else{
                     System.out.println("Continue Payments..");
+                    continue;
                 }
             }
             else

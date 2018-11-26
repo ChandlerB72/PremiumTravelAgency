@@ -29,7 +29,7 @@ public abstract class TripState {
         boolean returnLater = answer.toLowerCase().equals("later");
 
         if (returnLater) {
-            System.out.println();
+            System.out.println();// SAVE TRIP HERE?
             System.out.println("-- Trip Saved to Be Completed Later --");
         }
 

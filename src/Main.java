@@ -5,12 +5,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Select Travel Agent
-
-        /////////////////////////////////////////////////////////////////////
+        // Initializing necessary objects
         TripStateLoop tripStateLoop = new TripStateLoop();
         Trip trip;
 
+        // Try to start normal process flow, if not throw an error
         try {
             trip = tripStateLoop.execute();
         }catch(Exception ex){
@@ -18,13 +17,16 @@ public class Main {
             return;
         }
 
+
         while (true)
         {
+            // Attempt to showItinerary, if state
             showItinerary(trip);
 
             System.out.println();
             System.out.println("Simulate trip reload to correct state? [yes]");
 
+            // Loading simulation - Restart normal process flow, if not throw an error
             if (scanner.nextLine().toLowerCase().trim().equals("yes")){
                 try {
                     tripStateLoop.execute(trip);
@@ -38,15 +40,18 @@ public class Main {
         }
     }
 
+    // Makes necessary function calls to prepare itinerary if trip is valid
     private static void showItinerary(Trip trip)
     {
-        if (ItineraryFactory.TripCanProduceItinerary(trip))
-        {
+        // Validates Trip and Trip Status is able to produce Itinerary
+        if (ItineraryFactory.TripCanProduceItinerary(trip)) {
             System.out.println("Show itinerary? [yes]");
             if (!scanner.nextLine().toLowerCase().trim().equals("yes")) return;
 
+            // Initializes itinerary as a string
             String itinerary;
 
+            // Start building the itinerary from trip components, if not throw an error
             try{
                 itinerary = ItineraryFactory.get(trip);
             }catch(Exception ex){
@@ -54,9 +59,12 @@ public class Main {
                 return;
             }
 
+            // Displays itinerary
             System.out.println(itinerary);
             return;
         }
+
+        // If trip preconditions aren't met, output to user and jump back to main
         System.out.println();
         System.out.println("---------------------------------------------------------");
         System.out.println("Trip #" + trip.getOrderId() + " Incomplete - Itinerary Unavailable");

@@ -1,13 +1,18 @@
 import java.math.BigDecimal;
-/* This class holds the bill total
- *
+
+/**
+ * Bill is the object that holds all of the pricing
+ * and payment information for the Trip object.
  */
 public class Bill {
+
+    // Variables
     private BigDecimal price;
     private BigDecimal balance;
     private boolean paidInFull;
     private Payment payment;
 
+    // Constructor
     public Bill() {
         this.price = new BigDecimal(0);
         this.balance = new BigDecimal(0);
@@ -15,35 +20,29 @@ public class Bill {
         this.payment = new Payment();
     }
 
+    // Getters and Setters
     public BigDecimal getPrice() {
         return price;
     }
-
     public void setPrice(BigDecimal price) {
         this.price = price;
         setBalance(price);
     }
-
     public BigDecimal getBalance() {
         return balance;
     }
-
     public void setBalance(BigDecimal balance) {
         this.balance = balance;
     }
-
     public boolean isPaidInFull() {
         return paidInFull;
     }
-
     public void setPaidInFull(boolean paidInFull) {
         this.paidInFull = paidInFull;
     }
-
     public Payment getPayment() {
         return payment;
     }
-
     public void setPayment(Payment payment) {
         this.payment = payment;
 
@@ -56,6 +55,9 @@ public class Bill {
             setPaidInFull(true);
     }
 
+    /**
+     * @return String that describes the bill price and balance
+     */
     public String Describe() {
         return System.lineSeparator() + "Total Bill: $" + price + "\n" +
                 "Balance: $" + balance;

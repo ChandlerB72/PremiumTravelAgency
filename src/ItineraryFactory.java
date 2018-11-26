@@ -18,6 +18,7 @@ public class ItineraryFactory {
         return itinerary.output();
     }
 
+    // Validates Trip and Trip Status is able to produce Itinerary
     public static boolean TripCanProduceItinerary(Trip trip){
         assert trip != null : "trip != null";
 

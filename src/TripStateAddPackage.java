@@ -54,7 +54,7 @@ public class TripStateAddPackage extends TripState{
         }
 
         // Check that num is in range
-        if(packageID < 0 && packageID >= packageOptions.size()){
+        if(packageID < 0 || packageID >= packageOptions.size()){
             System.out.println("ERROR: Invalid input. ID is incorrect.");
             return false;
         }
@@ -86,9 +86,8 @@ public class TripStateAddPackage extends TripState{
      */
     @Override
     public TripStateLoop.Status execute() {
-
         List<Package> selectedPackages = new ArrayList<>();  /*< List of people selected as travelers*/
-        Scanner scanner=  new Scanner(System.in);
+        Scanner scanner =  new Scanner(System.in);
 
         System.out.println();
         System.out.println("-- Package Menu --");
@@ -105,6 +104,7 @@ public class TripStateAddPackage extends TripState{
         System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter ID of package from list");
         System.out.println("\t : Enter [later] to save and return to add package later");
+        System.out.println("\t : Enter [done] to finish adding packages");
 
 
         boolean getPackages = true;

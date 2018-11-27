@@ -1,5 +1,5 @@
 /**
- *
+ * Abstract class that all Itinerary elements implement
  */
 public abstract class ItineraryDecorator implements iItineraryComponent{
 

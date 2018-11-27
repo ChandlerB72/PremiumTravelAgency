@@ -8,8 +8,8 @@ public class PaymentCreditCard extends Payment{
     String creditCardNumber; /*<  Holds card number for payment*/
 
     //! Constructors
-    public PaymentCreditCard(BigDecimal amountPaid, String creditCardNumber) {
-        super(amountPaid);
+    public PaymentCreditCard(BigDecimal amountPaid, Person personPaying, String creditCardNumber) {
+        super(amountPaid, personPaying);
         this.creditCardNumber = creditCardNumber;
     }
 

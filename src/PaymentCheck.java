@@ -8,8 +8,8 @@ public class PaymentCheck extends Payment{
     private int checkNumber; /*<  Holds check number for payment*/
 
     //! Constructor
-    public PaymentCheck(BigDecimal amountPaid, int checkNumber) {
-        super(amountPaid);
+    public PaymentCheck(BigDecimal amountPaid, Person personPaying, int checkNumber) {
+        super(amountPaid, personPaying);
         this.checkNumber = checkNumber;
     }
 

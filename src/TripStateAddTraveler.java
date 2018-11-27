@@ -79,6 +79,20 @@ public class TripStateAddTraveler extends TripState{
     }
 
     /**
+     * Dispalys all current travelers
+     */
+    public void showTravelers(){
+        if (getTripContext().getTrip().getTravelers().size() > 0) {
+            System.out.println("Current Travelers");
+            System.out.println("--------------------");
+            for (int i = 0; i < getTripContext().getTrip().getTravelers().size(); i++) {
+                System.out.println(getTripContext().getTrip().getTravelers().get(i).getFirstName() + " " +
+                        getTripContext().getTrip().getTravelers().get(i).getLastName());
+            }
+        }
+    }
+
+    /**
      * The main execution of this trip state
      * @return The new status after running through this state
      */
@@ -99,11 +113,16 @@ public class TripStateAddTraveler extends TripState{
             System.out.println(personOptions.get(p).toString());
         }
 
+        System.out.println("");
+        showTravelers();
+        System.out.println("");
+
         // User Prompt
         System.out.println();
         System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter ID number of person from list");
         System.out.println("\t : Enter [later] to save and return to add package later");
+        System.out.println("\t : Enter [done] to finish adding packages");
 
         boolean getTravelers = true;
         while(getTravelers) {

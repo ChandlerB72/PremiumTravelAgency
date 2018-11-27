@@ -14,8 +14,9 @@ public class Payment{
     public Payment(){}
 
     //! Constructor
-    public Payment(BigDecimal amountPaid) {
+    public Payment(BigDecimal amountPaid, Person personPaying) {
         this.amountPaid = amountPaid;
+        this.personPaying = personPaying;
     }
 
     //! Getters and Setters
@@ -38,7 +39,8 @@ public class Payment{
      * @return Description of payment
      */
     public String Describe() {
-        return "Paid $" + getAmountPaid();
+        return getPersonPaying().getFirstName() + " " + getPersonPaying().getLastName() + " paid $" + getAmountPaid();
+//        return "" + getAmountPaid();
     }
 
     /**

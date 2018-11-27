@@ -15,18 +15,9 @@ public class TripStateAddTravelAgent extends TripState{
     /**
      * Method to allow user to select the person who is paying
      */
-    public void selectPersonPaying(String userInput){
+    public void selectTravelAgent(String userInput) throws IndexOutOfBoundsException{
         Scanner scanner = new Scanner(System.in);
 
-//        // Prints Package Options
-//        System.out.println("ID\t|Name");
-//        System.out.println("-----------------------------------------");
-//        for (int p = 0; p < travelAgentsOptions.size(); p++) {
-//            System.out.println(travelAgentsOptions.get(p).toString());
-//        }
-
-        System.out.println();
-        System.out.println("Enter ID number of person from list");
         boolean selectTravelAgent = true;
         int personID = 0;
 
@@ -35,22 +26,24 @@ public class TripStateAddTravelAgent extends TripState{
             // Check that input can be parsed
             try{
                 personID = Integer.parseInt(userInput);
+                personID = personID - 1;
 
                 // Check that num is in range
-                if (personID <= 0 && personID >= travelAgentsOptions.size()) {
-                    System.out.println("ERROR: Invalid input. ID is incorrect.");
+                if (personID < 0 || personID >= travelAgentsOptions.size()) {
+                    System.out.println("ERROR: Invalid input. ID is out of bounds.");
                     userInput = scanner.nextLine().trim();
+                    continue;
                 }
 
-                personID = personID - 1;
-                System.out.println("Person Selected: " + travelAgentsOptions.get(personID).getFirstName() + " " +
+                System.out.println("Travel Agent Selected: " + travelAgentsOptions.get(personID).getFirstName() + " " +
                         travelAgentsOptions.get(personID).getLastName());
                 getTripContext().getTrip().setTravelAgent(travelAgentsOptions.get(personID));
                 selectTravelAgent = false;
             }
             catch (NumberFormatException e){
-                System.out.println("ERROR: Invalid input, please enter an ID number");
+                System.out.println("ERROR: Invalid input. ID is incorrect.");
                 userInput = scanner.nextLine().trim();
+                continue;
             }
         }
     }
@@ -78,16 +71,19 @@ public class TripStateAddTravelAgent extends TripState{
         System.out.println("\t : Enter ID number of person from list");
         System.out.println("\t : Enter [later] to save and return to Thank You later");
 
-        String userInput = scanner.nextLine().trim();
+        while (true) {
+            String userInput = "";
+            userInput = scanner.nextLine().trim();
 
-        // Save and Exit if "later"
-        if (returnLater(userInput)) {
-            return TripStateLoop.Status.Stop;
-            // If later, save trip via write factory and json strategy using serialization and go to UI flow 2
+            // Save and Exit if "later"
+            if (returnLater(userInput)) {
+                return TripStateLoop.Status.Stop;
+                // If later, save trip via write factory and json strategy using serialization and go to UI flow 2
+            }
+
+            selectTravelAgent(userInput);
+            getTripContext().changeState(new TripStateAddTraveler(getTripContext()));
+            return TripStateLoop.Status.Continue;
         }
-
-        selectPersonPaying(userInput);
-        getTripContext().changeState(new TripStateAddTraveler(getTripContext()));
-        return TripStateLoop.Status.Continue;
     }
 }

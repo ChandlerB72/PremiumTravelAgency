@@ -17,16 +17,23 @@ public class TripStatePayCreditCard extends TripState{
      */
     @Override
     public TripStateLoop.Status execute() {
+
         System.out.println();
         System.out.println("-- Credit Card Payment Menu --");
+        System.out.println();
+
+        System.out.println(getTripContext().getTrip().getBill().Describe());
+
         System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter an amount to pay");
         System.out.println("\t : Enter [later] to save and return to payment details later");
+        System.out.println();
 
         Scanner scanner = new Scanner(System.in);
 
         // Navigates to new state and/or pays amount based off user input
         while (true) {
+            Person payingPerson = selectPersonPaying();
             System.out.println(getTripContext().getTrip().getBill().Describe());
             String userInput = scanner.nextLine().trim();
 
@@ -46,9 +53,8 @@ public class TripStatePayCreditCard extends TripState{
                     creditCardNumber = scanner.next().trim();
                 }
 
-                getTripContext().getTrip().getBill().setPayment(new PaymentCreditCard(new BigDecimal(userInput),creditCardNumber));
-                getTripContext().getTrip().getPayments().add(new PaymentCreditCard(new BigDecimal(userInput),creditCardNumber)); ///////TEST LINE
-
+                getTripContext().getTrip().getBill().setPayment(new PaymentCreditCard(new BigDecimal(userInput),payingPerson,creditCardNumber));
+                getTripContext().getTrip().getPayments().add(new PaymentCreditCard(new BigDecimal(userInput),payingPerson,creditCardNumber));
                 // Check if bill is fully paid
                 if (getTripContext().getTrip().getBill().isPaidInFull()){
                     getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
@@ -57,7 +63,8 @@ public class TripStatePayCreditCard extends TripState{
 
                 else{
                     System.out.println("Continue Payments..");
-                    continue;
+                    getTripContext().changeState(new TripStateChoosePaymentType(getTripContext()));
+                    return TripStateLoop.Status.Continue;
                 }
             }
             else

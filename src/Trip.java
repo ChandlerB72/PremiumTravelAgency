@@ -25,6 +25,7 @@ public class Trip {
         destinations = new ArrayList<>();
         travelers = new ArrayList<>();
         packages = new ArrayList<>();
+        payments = new ArrayList<>();
         bill = new Bill();
     }
 
@@ -66,6 +67,14 @@ public class Trip {
     }
     public void setPackages(List<Package> packages) {
         this.packages = packages;
+    }
+
+    //! Getters and Setters
+    public List<Payment> getPayments() {
+        return payments;
+    }
+    public void setPayments(List<Payment> payments) {
+        this.payments = payments;
     }
 
     //! Getters and Setters

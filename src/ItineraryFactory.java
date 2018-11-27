@@ -15,6 +15,8 @@ public class ItineraryFactory {
         itinerary = new ItineraryAppendSeparator(itinerary);
         itinerary = new ItineraryAppendBookingDetails(itinerary);
         itinerary = new ItineraryAppendSeparator(itinerary);
+        itinerary = new ItineraryAppendPaymentDetails(itinerary);
+        itinerary = new ItineraryAppendSeparator(itinerary);
         itinerary = new ItineraryAppendTravelers(itinerary);
         itinerary = new ItineraryAppendSeparator(itinerary);
         itinerary = new ItineraryAppendPackages(itinerary);

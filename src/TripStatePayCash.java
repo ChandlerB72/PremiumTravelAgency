@@ -36,7 +36,9 @@ public class TripStatePayCash extends TripState{
 
             //Check for numerical input
             if (isNumeric(userInput)){
+
                 getTripContext().getTrip().getBill().setPayment(new PaymentCash(new BigDecimal(userInput)));
+                getTripContext().getTrip().getPayments().add(new PaymentCash(new BigDecimal(userInput))); ///////TEST LINE
 
                 // Check if bill is fully paid
                 if (getTripContext().getTrip().getBill().isPaidInFull()){

@@ -34,12 +34,11 @@ public class Payment{
         this.personPaying = personPaying;
     }
 
-
     /**
      * @return Description of payment
      */
     public String Describe() {
-        return "Paid " + getAmountPaid();
+        return "Paid $" + getAmountPaid();
     }
 
     /**

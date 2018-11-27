@@ -22,6 +22,7 @@ public class TripStatePayCheck extends TripState{
         System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter an amount to pay");
         System.out.println("\t : Enter [later] to save and return to payment details later");
+
         Scanner scanner = new Scanner(System.in);
 
         // Navigates to new state and/or pays amount based off user input
@@ -37,7 +38,9 @@ public class TripStatePayCheck extends TripState{
             if (isNumeric(userInput)){
                 System.out.println("Please enter the check number.");
                 int checkNumber = scanner.nextInt();
+
                 getTripContext().getTrip().getBill().setPayment(new PaymentCheck(new BigDecimal(userInput),checkNumber));
+                getTripContext().getTrip().getPayments().add(new PaymentCheck(new BigDecimal(userInput),checkNumber)); ///////TEST LINE
 
                 // Check if bill is fully paid
                 if (getTripContext().getTrip().getBill().isPaidInFull()){
@@ -50,9 +53,8 @@ public class TripStatePayCheck extends TripState{
                     continue;
                 }
             }
-//            else
-//                System.out.println("ERROR: Please input an amount to pay or [later] to save and quit");
-
+            else
+                System.out.println("ERROR: Please input an amount to pay or [later] to save and quit");
         }
     }
 }

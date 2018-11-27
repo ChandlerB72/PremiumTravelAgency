@@ -36,7 +36,6 @@ public class TripStatePayCreditCard extends TripState{
 
             //Check for numerical input
             if (isNumeric(userInput)){
-
                 System.out.println("Please enter the credit card number");
                 String creditCardNumber = scanner.next().trim();
 
@@ -48,6 +47,7 @@ public class TripStatePayCreditCard extends TripState{
                 }
 
                 getTripContext().getTrip().getBill().setPayment(new PaymentCreditCard(new BigDecimal(userInput),creditCardNumber));
+                getTripContext().getTrip().getPayments().add(new PaymentCreditCard(new BigDecimal(userInput),creditCardNumber)); ///////TEST LINE
 
                 // Check if bill is fully paid
                 if (getTripContext().getTrip().getBill().isPaidInFull()){
@@ -60,8 +60,8 @@ public class TripStatePayCreditCard extends TripState{
                     continue;
                 }
             }
-//            else
-//                System.out.println("ERROR: Please input an amount to pay or [later] to save and quit");
+            else
+                System.out.println("ERROR: Please input an amount to pay or [later] to save and quit");
 
         }
     }

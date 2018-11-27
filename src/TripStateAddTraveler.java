@@ -44,14 +44,15 @@ public class TripStateAddTraveler extends TripState{
         // Check that input can be parsed
         try{
             personID = Integer.parseInt(userInput);
+            personID = personID - 1;
         }
         catch (NumberFormatException e){
             System.out.println("ERROR: Invalid input. ID is incorrect.");
             return false;
         }
 
-        // Check that num is in rangez
-        if(personID <= 0 || personID >= personOptions.size()){
+        // Check that num is in range
+        if (personID < 0 || personID >= personOptions.size()){
             System.out.println("ERROR: Invalid input. ID is incorrect.");
             return false;
         }
@@ -84,15 +85,14 @@ public class TripStateAddTraveler extends TripState{
     @Override
     public TripStateLoop.Status execute() {
 
-        // Variables
-        List<Person> selectedPersons = new ArrayList<>();
+        List<Person> selectedPersons = new ArrayList<>(); /*< List of people selected as travelers*/
         Scanner scanner =  new Scanner(System.in);
 
         System.out.println();
         System.out.println("-- Travelers Menu --");
         System.out.println();
 
-        // Prints Package Options
+        // Prints Person Options
         System.out.println("ID\t|Name");
         System.out.println("-----------------------------------------");
         for (int p = 0; p < personOptions.size(); p++) {

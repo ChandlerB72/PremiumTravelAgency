@@ -23,6 +23,7 @@ public class ItineraryAppendBookingDetails extends ItineraryDecorator {
         toOutput = toOutput + "Order # : " + getTrip().getOrderId() + System.lineSeparator();
         toOutput = toOutput + "Booked : " + getTrip().getBookedOn() + System.lineSeparator();
         toOutput = toOutput + "Price : $" + getTrip().getBill().getPrice() + System.lineSeparator();
+        toOutput = toOutput + "Travel Agent: " + getTrip().getTravelAgent() + System.lineSeparator();
 
         return toOutput;
     }

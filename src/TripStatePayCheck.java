@@ -50,39 +50,9 @@ public class TripStatePayCheck extends TripState{
                     continue;
                 }
             }
-            else
-                System.out.println("ERROR: Please input an amount to pay or [later] to save and quit");
+//            else
+//                System.out.println("ERROR: Please input an amount to pay or [later] to save and quit");
 
         }
     }
 }
-
-
-//            if (scanner.hasNext())
-//                userInput = scanner.next().trim().toLowerCase();
-//
-//            if (returnLater(userInput))
-//                return TripStateLoop.Status.Stop;
-//
-//            if (userInput.isEmpty())
-//                continue;
-//
-//            if (isNumeric(userInput)) {
-//                try {
-//                    System.out.println("Please input a check number.");
-//
-//                    int checkNumber = scanner.nextInt();
-//                    getTripContext().getTrip().getBill().setPayment(new PaymentCheck(new BigDecimal(userInput), checkNumber));
-//                    System.out.println("Accepted $" + userInput + " via check #" + checkNumber + "!");
-//                    getTripContext().changeState(new TripStateAddThankYou(getTripContext()));
-//                    return TripStateLoop.Status.Continue;
-//
-//                } catch (Exception e){
-//                    System.out.println("ERROR: Input invalid. Please only use numbers.");
-//                    continue;
-//                }
-//            }
-//
-//            // Check for return later
-//            if (returnLater(userInput))
-//                return TripStateLoop.Status.Stop;

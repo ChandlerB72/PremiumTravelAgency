@@ -46,6 +46,7 @@ public class TripStateAddPackage extends TripState{
         // Check that input can be parsed
         try{
             packageID = Integer.parseInt(userInput);
+            packageID = packageID - 1;
         }
         catch (NumberFormatException e){
             System.out.println("ERROR: Invalid input, please choose packageID");
@@ -53,7 +54,7 @@ public class TripStateAddPackage extends TripState{
         }
 
         // Check that num is in range
-        if(packageID <= 0 && packageID >= packageOptions.size()){
+        if(packageID < 0 && packageID >= packageOptions.size()){
             System.out.println("ERROR: Invalid input. ID is incorrect.");
             return false;
         }
@@ -64,7 +65,6 @@ public class TripStateAddPackage extends TripState{
             System.out.println("ERROR: You can't enter the same package twice");
             return false;
         }
-
         return true;
     }
 
@@ -86,8 +86,8 @@ public class TripStateAddPackage extends TripState{
      */
     @Override
     public TripStateLoop.Status execute() {
-        // Variables
-        List<Package> selectedPackages = new ArrayList<>();
+
+        List<Package> selectedPackages = new ArrayList<>();  /*< List of people selected as travelers*/
         Scanner scanner=  new Scanner(System.in);
 
         System.out.println();

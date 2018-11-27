@@ -24,11 +24,14 @@ public class TripContextStateFactory {
             case Create:
                 return new TripStateCreate(tripContext);
 
+            case AddTravelAgent:
+                return new TripStateAddTraveler(tripContext);
+
             case AddTravelers:
-                return new TripStateAddTraveler(tripContext); // Travelers
+                return new TripStateAddTraveler(tripContext);
 
             case AddPackages:
-                return new TripStateAddPackage(tripContext); //Packages
+                return new TripStateAddPackage(tripContext);
 
             case PayCash:
                 return new TripStatePayCash(tripContext);

@@ -28,7 +28,7 @@ public class TripStateCreate extends TripState {
         System.out.println();
         System.out.println("----- PREMIUM TRAVEL SERVICES TRIP RESERVATION SYSTEM -----");
         System.out.println();
-        getTripContext().changeState(new TripStateAddTraveler(getTripContext()));
+        getTripContext().changeState(new TripStateAddTravelAgent(getTripContext()));
 
         return TripStateLoop.Status.Continue;
     }

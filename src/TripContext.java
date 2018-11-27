@@ -3,12 +3,12 @@ public class TripContext {
     private Trip trip; /*< Holds the active trip object*/
     private TripState tripState; /*< Holds the active trip object's state*/
 
-    //! Constructors
+    //! Constructor
     public TripContext() {
         this.tripState = new TripStateCreate(this);
     }
 
-    //! Constructors
+    //! Constructor
     public TripContext(Trip trip) throws Exception{
         assert trip != null : "ERROR: Trip can't be null!";
 
@@ -16,15 +16,16 @@ public class TripContext {
         tripState = TripContextStateFactory.get(this);
     }
 
-    //! Getters and Setters
+    //! Getter
     public Trip getTrip() {
         return trip;
     }
+    //! Setter
     public void setTrip(Trip trip) {
         this.trip = trip;
     }
 
-    //! Getters
+    //! Getter
     public TripState getTripState() {
         return tripState;
     }

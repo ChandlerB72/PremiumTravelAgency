@@ -63,6 +63,7 @@ public abstract class TripState {
      */
     public enum Status {
         Create,
+        AddTravelAgent,
         AddTravelers,
         AddPackages,
         ChoosePaymentType,

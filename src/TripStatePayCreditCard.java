@@ -60,8 +60,8 @@ public class TripStatePayCreditCard extends TripState{
                     continue;
                 }
             }
-            else
-                System.out.println("ERROR: Please input an amount to pay or [later] to save and quit");
+//            else
+//                System.out.println("ERROR: Please input an amount to pay or [later] to save and quit");
 
         }
     }

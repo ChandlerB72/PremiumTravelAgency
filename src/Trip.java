@@ -13,6 +13,8 @@ public class Trip {
     private List<String> destinations; /*< holds a list of all destinations */
     private List<Person> travelers; /*< Holds a list of all travelers */
     private List<Package> packages; /*< Holds a list of all packages */
+    private List<Payment> payments; /*< Holds a list of all payments */
+    private TravelAgent travelAgent; /*< Holds the travel agent person */
     private String thankYou; /*< Holds thankYou string */
     private Bill bill; /*< Holds bill object */
     private TripState.Status tripStateStatus; /*< Holds Current State of Trip Object */
@@ -64,6 +66,14 @@ public class Trip {
     }
     public void setPackages(List<Package> packages) {
         this.packages = packages;
+    }
+
+    //! Getters and Setters
+    public TravelAgent getTravelAgent() {
+        return travelAgent;
+    }
+    public void setTravelAgent(TravelAgent travelAgent) {
+        this.travelAgent = travelAgent;
     }
 
     //! Getters and Setters

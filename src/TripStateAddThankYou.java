@@ -1,13 +1,20 @@
 import java.util.Scanner;
 
+
+/**
+ * State of trip to add Packages
+ */
 public class TripStateAddThankYou extends TripState{
 
-    // Constructor
+    //! Constructor
     public TripStateAddThankYou(TripContext tripContext) {
         super(tripContext, Status.AddThankYou);
     }
 
-    // Methods
+    /**
+     * @param thankYou user input from the execute method
+     * @return true if user input passes all data validation
+     */
     private boolean isThankYouValid(String thankYou){
         if (thankYou.isEmpty()){
             System.out.println("-- Error: Thank you can't be empty --");
@@ -20,6 +27,10 @@ public class TripStateAddThankYou extends TripState{
         return true;
     }
 
+    /**
+     * The main execution of this trip state
+     * @return The new status after running through this state
+     */
     @Override
     public TripStateLoop.Status execute() {
         System.out.println();

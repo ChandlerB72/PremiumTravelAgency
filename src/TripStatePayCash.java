@@ -1,14 +1,20 @@
 import java.math.BigDecimal;
 import java.util.Scanner;
 
+/**
+ * State of trip if paying in cash
+ */
 public class TripStatePayCash extends TripState{
 
-    // Constructor
+    //! Constructor
     public TripStatePayCash(TripContext tripContext) {
         super(tripContext, Status.PayCash);
     }
 
-    // Methods
+    /**
+     * The main execution of this trip state
+     * @return The new status after running through this state
+     */
     @Override
     public TripStateLoop.Status execute() {
         System.out.println();

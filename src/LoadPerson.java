@@ -34,7 +34,7 @@ public class LoadPerson {
                     travelerList.add(new Traveler(13,"Eric", "Gray", "770-555-0013", false));
                     travelerList.add(new Traveler(14,"Sandra", "Jones", "770-555-0014", false));
                     travelerList.add(new Traveler(15,"Quillan", "May", "770-555-0015", false));
-                    travelerList.add(new Traveler(16,"Colt", "Mc", "770-555-0016", false));
+                    travelerList.add(new Traveler(16,"Colt", "McKissk", "770-555-0016", false));
                     travelerList.add(new Traveler(17,"Phuc", "Nguyen", "770-555-0017", false));
                     travelerList.add(new Traveler(18,"Drashtee", "Parmar", "770-555-0018", false));
                     travelerList.add(new Traveler(19,"Sai", "Pyneni", "770-555-0019", false));

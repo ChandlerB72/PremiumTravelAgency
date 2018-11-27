@@ -1,9 +1,12 @@
 import java.util.Date;
 import java.util.Random;
 
+/**
+ * State of trip to create trip
+ */
 public class TripStateCreate extends TripState {
 
-    // Constructor
+    //! Constructor
     public TripStateCreate(TripContext tripContext) {
         super(tripContext, Status.Create);
 
@@ -16,7 +19,10 @@ public class TripStateCreate extends TripState {
         getTripContext().setTrip(trip);
     }
 
-    // Methods
+    /**
+     * The main execution of this trip state
+     * @return The new status after running through this state
+     */
     @Override
     public TripStateLoop.Status execute() {
         System.out.println();

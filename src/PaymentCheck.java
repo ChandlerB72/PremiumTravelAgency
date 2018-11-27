@@ -1,5 +1,8 @@
 import java.math.BigDecimal;
 
+/**
+ * Object that implements the TripStatePayCheck
+ */
 public class PaymentCheck extends Payment{
 
     private int checkNumber; /*<  Holds check number for payment*/
@@ -10,7 +13,7 @@ public class PaymentCheck extends Payment{
         this.checkNumber = checkNumber;
     }
 
-    // Getters
+    //! Getter
     public int getCheckNumber() {
         return checkNumber;
     }

@@ -3,13 +3,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class TripStateAddPackage extends TripState{
-    private List<Package> packageOptions = LoadPackages.getInstance();
 
+/**
+ * State of trip to add Packages
+ */
+public class TripStateAddPackage extends TripState{
+    private List<Package> packageOptions = LoadPackages.getInstance(); /*< Singleton loaded list */
+
+    //! Constructor
     public TripStateAddPackage(TripContext tripContext) {
         super(tripContext, Status.AddPackages);
     }
 
+    /**
+     * @param userInput user input from the execute method
+     * @return true if not done entering data
+     */
     public boolean continueEnteringPackages(String userInput){
         boolean done = userInput.equals("done");
 
@@ -21,6 +30,10 @@ public class TripStateAddPackage extends TripState{
         return !done;
     }
 
+    /**
+     * @param userInput user input from the execute method
+     * @return true if user input passes all data validation
+     */
     public boolean isPackageValid(String userInput){
         int packageID;
 
@@ -55,6 +68,10 @@ public class TripStateAddPackage extends TripState{
         return true;
     }
 
+
+    /**
+     * @return true/false if the list is empty
+     */
     public boolean isPackageListValid(){
         if (getTripContext().getTrip().getTravelers().isEmpty()){
             System.out.println("ERROR: No packages. At least one package required");
@@ -63,6 +80,10 @@ public class TripStateAddPackage extends TripState{
         return true;
     }
 
+    /**
+     * The main execution of this trip state
+     * @return The new status after running through this state
+     */
     @Override
     public TripStateLoop.Status execute() {
         // Variables

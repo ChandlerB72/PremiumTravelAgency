@@ -2,13 +2,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * State of trip to add Packages
+ */
 public class TripStateAddTraveler extends TripState{
-    private List<Person> personOptions = LoadPerson.getInstance();
+    private List<Person> personOptions = LoadPerson.getInstance(); /*< Singleton loaded list */
 
+    //! Constructor
     public TripStateAddTraveler(TripContext tripContext) {
         super(tripContext, Status.AddTravelers);
     }
 
+    /**
+     * @param userInput user input from the execute method
+     * @return true if not done entering data
+     */
     public boolean continueEnteringTravelers(String userInput){
         boolean done = userInput.equals("done");
 
@@ -20,6 +28,10 @@ public class TripStateAddTraveler extends TripState{
         return !done;
     }
 
+    /**
+     * @param userInput user input from the execute method
+     * @return true if user input passes all data validation
+     */
     public boolean isTravelerValid(String userInput){
         int personID;
 
@@ -54,6 +66,9 @@ public class TripStateAddTraveler extends TripState{
         return true;
     }
 
+    /**
+     * @return true/false if the list is empty
+     */
     public boolean isTravelerListValid(){
         if (getTripContext().getTrip().getTravelers().isEmpty()){
             System.out.println("ERROR: No travelers. At least one traveler required");
@@ -62,6 +77,10 @@ public class TripStateAddTraveler extends TripState{
         return true;
     }
 
+    /**
+     * The main execution of this trip state
+     * @return The new status after running through this state
+     */
     @Override
     public TripStateLoop.Status execute() {
 

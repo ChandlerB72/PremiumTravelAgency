@@ -1,6 +1,8 @@
 import java.math.BigDecimal;
-import java.util.Date;
 
+/**
+ * Object that implements the TripStatePayCreditCard
+ */
 public class PaymentCreditCard extends Payment{
 
     String creditCardNumber; /*<  Holds card number for payment*/
@@ -11,7 +13,7 @@ public class PaymentCreditCard extends Payment{
         this.creditCardNumber = creditCardNumber;
     }
 
-    //! Getters
+    //! Getter
     public String getCreditCardNumber() {
         return creditCardNumber;
     }

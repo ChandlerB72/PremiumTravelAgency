@@ -1,11 +1,11 @@
-import java.math.BigDecimal;
-
+/**
+ * Abstract class that all states extend
+ */
 public abstract class TripState {
 
-    // Variables
-    private TripContext tripContext;
+    private TripContext tripContext; /*< Holds the trip context object pertaining to the trip*/
 
-    // Constructor
+    //! Constructor
     public TripState(TripContext tripContext, Status tripStateStatus) {
         this.tripContext = tripContext;
 
@@ -13,18 +13,25 @@ public abstract class TripState {
             tripContext.getTrip().setTripStateStatus(tripStateStatus);
     }
 
-    // Getters and Setters
+    //! Getters and Setters
     public TripContext getTripContext() {
         return tripContext;
     }
-
     public void setTripContext(TripContext tripContext) {
         this.tripContext = tripContext;
     }
 
-    // Methods
+
+    /**
+     * @return Abstract class that every state will implement
+     */
     public abstract TripStateLoop.Status execute();
 
+
+    /**
+     * @param answer User input from state
+     * @return true if answer is "later", false otherwise
+     */
     protected boolean returnLater(String answer){
         boolean returnLater = answer.toLowerCase().equals("later");
 
@@ -36,6 +43,11 @@ public abstract class TripState {
         return returnLater;
     }
 
+
+    /**
+     * @param str User input from state
+     * @return true/false if number is numeric
+     */
     public static boolean isNumeric(String str) {
         try {
             double d = Double.parseDouble(str);
@@ -45,6 +57,10 @@ public abstract class TripState {
         return true;
     }
 
+
+    /**
+     * Enum that holds all possible states of trip
+     */
     public enum Status {
         Create,
         AddTravelers,

@@ -1,5 +1,8 @@
 import java.math.BigDecimal;
 
+/**
+ * Object that implements the TripStatePayCash
+ */
 public class PaymentCash extends Payment {
 
     //! Constructor

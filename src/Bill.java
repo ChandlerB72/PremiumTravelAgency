@@ -6,7 +6,6 @@ import java.math.BigDecimal;
  */
 public class Bill {
 
-    // Variables
     private BigDecimal price; /*!< Holds the total price of the trip*/
     private BigDecimal balance; /*!< Holds the current balance of the trip*/
     private boolean paidInFull; /*!< Holds if trip paid in full*/

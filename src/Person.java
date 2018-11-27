@@ -1,17 +1,18 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
+/**
+ * Person is the object that holds all
+ * the invidiual's information. This is
+ * extended by both Traveler and Travel
+ * Agent
+ */
 public class Person {
 
-    // Variables
-    protected int personID;
-    private String firstName;
-    private String lastName;
-    private String phoneNumber;
-    private boolean isTravelAgent;
+    protected int personID; /*< Unique identifier*/
+    private String firstName; /*< First name of person*/
+    private String lastName; /*< Last name of person*/
+    private String phoneNumber; /*< Phone number of person*/
+    private boolean isTravelAgent; /*< boolean on whether or not they're a travel agent*/
 
-    // Constructor
+    //! Constructor
     public Person(int personID, String firstName, String lastName, String phoneNumber, boolean isTravelAgent) {
         this.personID = personID;
         this.firstName = firstName;
@@ -20,24 +21,30 @@ public class Person {
         this.isTravelAgent = isTravelAgent;
     }
 
-    // Getters and Setters
+    //! Getter
     public int getPersonID() {
         return personID;
     }
 
+    //! Getter
     public String getFirstName() {
         return firstName;
     }
 
+    //! Getter
     public String getLastName() {
         return lastName;
     }
 
+    //! Getter
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
 
+    /**
+     * @return Person information via String
+     */
     @Override
     public String toString() {
         return (personID + "\t|" + firstName  + " " + lastName);

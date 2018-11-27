@@ -1,15 +1,17 @@
-import java.math.BigDecimal;
 import java.util.List;
 import java.util.Scanner;
 
 public class TripStateChoosePaymentType extends TripState{
-    private List<Person> payingPersonOptions = LoadPerson.getInstance();
+    private List<Person> payingPersonOptions = LoadPerson.getInstance(); /*< Singleton loaded list */
 
-    // Constructor
+    //! Constructor
     public TripStateChoosePaymentType(TripContext tripContext) {
         super (tripContext, Status.ChoosePaymentType);
     }
 
+    /**
+     * Method to allow user to select the person who is paying
+     */
     public void selectPersonPaying(){
         Scanner scanner = new Scanner(System.in);
 
@@ -49,6 +51,10 @@ public class TripStateChoosePaymentType extends TripState{
         }
     }
 
+    /**
+     * The main execution of this trip state
+     * @return The new status after running through this state
+     */
     @Override
     public TripStateLoop.Status execute() {
         Scanner scanner = new Scanner(System.in);

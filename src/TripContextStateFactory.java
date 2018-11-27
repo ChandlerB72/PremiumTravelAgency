@@ -1,6 +1,14 @@
+/**
+ * Handles object creation of TripStates
+ */
 public class TripContextStateFactory {
 
-    // Methods
+
+    /**
+     * @param tripContext The context of the trip
+     * @return the TripState to change to
+     * @throws Exception
+     */
     public static TripState get(TripContext tripContext) throws Exception {
 
         // Ensures tripContext and Trip have been instantiated

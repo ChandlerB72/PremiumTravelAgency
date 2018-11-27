@@ -1,8 +1,9 @@
 import java.math.BigDecimal;
 
 /**
- * Bill is the object that holds all of the pricing
- * and payment information for the Trip object.
+ * Payment is the object that holds all of the
+ * information regarding amounts contributing
+ * towards the bill for the Trip object.
  */
 public class Payment{
 

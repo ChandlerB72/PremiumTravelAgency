@@ -15,7 +15,7 @@ public class ItineraryAppendBookingDetails extends ItineraryDecorator {
     public String output() {
         String toOutput = super.output();
 
-        toOutput = toOutput + "\t\t\t\tBOOKING DETAILS";
+        toOutput = toOutput + "\t\tBOOKING DETAILS";
 
         toOutput = toOutput + (System.lineSeparator());
         toOutput = toOutput + (System.lineSeparator());

@@ -16,7 +16,7 @@ public class ItineraryAppendThanks extends ItineraryDecorator{
     public String output() {
         StringBuilder toOutput = new StringBuilder(super.output());
 
-        toOutput.append("\t\t\t\tTHANKS");
+        toOutput.append("\t\tTHANKS");
 
         toOutput.append(System.lineSeparator());
         toOutput.append(System.lineSeparator());

@@ -15,7 +15,7 @@ public class ItineraryAppendPaymentDetails extends ItineraryDecorator {
     public String output() {
         String toOutput = super.output();
 
-        toOutput = toOutput + "\t\t\t\tPAYMENT DETAILS";
+        toOutput = toOutput + "\t\tPAYMENT DETAILS";
 
         toOutput = toOutput + (System.lineSeparator());
         toOutput = toOutput + (System.lineSeparator());

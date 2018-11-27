@@ -16,7 +16,7 @@ public class ItineraryAppendPackages extends ItineraryDecorator {
     public String output() {
         StringBuilder toOutput = new StringBuilder(super.output());
 
-        toOutput.append("\t\t\t\tPACKAGES");
+        toOutput.append("\t\tPACKAGES");
 
         toOutput.append(System.lineSeparator());
         toOutput.append(System.lineSeparator());

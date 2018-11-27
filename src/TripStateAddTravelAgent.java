@@ -69,7 +69,7 @@ public class TripStateAddTravelAgent extends TripState{
         System.out.println();
         System.out.println("Please select one of the following: ");
         System.out.println("\t : Enter ID number of person from list");
-        System.out.println("\t : Enter [later] to save and return to Thank You later");
+        System.out.println("\t : Enter [later] to save and return to select Travel Agent later");
 
         while (true) {
             String userInput = "";
